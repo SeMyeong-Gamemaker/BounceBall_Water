@@ -331,7 +331,7 @@ repeat( 10 ) {
           <argument>
             <kind>1</kind>
             <string>draw_sprite_ext( sprite_index, -1, x, y + 4, image_xscale, image_yscale, 0, c_dkgray, 0.5 );
-draw_sprite_ext( Sprite_Ball_64, -1, x, y, 1, 1, 0, c_white, 1 - ( global.Ball_Pollution / global.Ball_Water_Max ) );
+draw_sprite_ext( Sprite_Ball_64, -1, x, y, 1, 1, 0, c_white, 1 );
 draw_sprite_ext( Sprite_Ball_Polluted_64, -1, x, y, 1, 1, 0, c_white, ( global.Ball_Pollution / global.Ball_Water_Max ) );
 </string>
           </argument>

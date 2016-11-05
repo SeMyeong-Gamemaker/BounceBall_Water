@@ -13,20 +13,31 @@
     <sprites name="Wall">
       <sprite>sprites\Sprite_Wall_64</sprite>
       <sprite>sprites\Sprite_Wall_Broken_64</sprite>
-      <sprite>sprites\Sprite_Pipe_64</sprite>
-      <sprite>sprites\Sprite_Filter_64</sprite>
-      <sprite>sprites\Sprite_Filter_Polluted_64</sprite>
-      <sprite>sprites\Sprite_Sponge_64</sprite>
       <sprite>sprites\Sprite_Cooler_64</sprite>
       <sprite>sprites\Sprite_Heater_64</sprite>
       <sprite>sprites\Sprite_Ice_64</sprite>
-      <sprite>sprites\Sprite_Pipe_In</sprite>
-      <sprite>sprites\Sprite_Pipe_Out</sprite>
       <sprites name="Water">
         <sprite>sprites\Sprite_Water_64</sprite>
         <sprite>sprites\Sprite_Water_64_Mask</sprite>
         <sprite>sprites\Sprite_Pollution_64</sprite>
         <sprite>sprites\Sprite_Pollution_64_Mask</sprite>
+      </sprites>
+      <sprites name="Filter">
+        <sprite>sprites\Sprite_Filter_64</sprite>
+        <sprite>sprites\Sprite_Filter_Polluted_64</sprite>
+      </sprites>
+      <sprites name="Purifier">
+        <sprite>sprites\Sprite_Purifier_64</sprite>
+        <sprite>sprites\Sprite_Purifier_Polluted_64</sprite>
+      </sprites>
+      <sprites name="Pipe">
+        <sprite>sprites\Sprite_Pipe_64</sprite>
+        <sprite>sprites\Sprite_Pipe_In</sprite>
+        <sprite>sprites\Sprite_Pipe_Out</sprite>
+      </sprites>
+      <sprites name="Sponge">
+        <sprite>sprites\Sprite_Sponge_64</sprite>
+        <sprite>sprites\Sprite_Sponge_Wet_64</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\Sprite_Fire_64</sprite>
@@ -83,6 +94,14 @@
       <objects name="Filter">
         <object>objects\Object_Filter_Parent</object>
         <object>objects\Object_Filter_64</object>
+      </objects>
+      <objects name="Purifier">
+        <object>objects\Object_Purifier_Parent</object>
+        <object>objects\Object_Purifier_64</object>
+      </objects>
+      <objects name="Sponge">
+        <object>objects\Object_Sponge_Parent</object>
+        <object>objects\Object_Sponge_64</object>
       </objects>
       <object>objects\Object_Pipe_64</object>
     </objects>
