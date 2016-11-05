@@ -8,7 +8,7 @@
   <sprites name="sprites">
     <sprites name="Ball">
       <sprite>sprites\Sprite_Ball_64</sprite>
-      <sprite>sprites\Sprite_Ice_64</sprite>
+      <sprite>sprites\Sprite_Ball_Polluted_64</sprite>
     </sprites>
     <sprites name="Wall">
       <sprite>sprites\Sprite_Wall_64</sprite>
@@ -17,6 +17,7 @@
       <sprite>sprites\Sprite_Sponge_64</sprite>
       <sprite>sprites\Sprite_Cooler_64</sprite>
       <sprite>sprites\Sprite_Heater_64</sprite>
+      <sprite>sprites\Sprite_Ice_64</sprite>
       <sprite>sprites\Sprite_Pipe_In</sprite>
       <sprite>sprites\Sprite_Pipe_Out</sprite>
       <sprites name="Water">
@@ -106,6 +107,8 @@
       <room>rooms\Room_7</room>
       <room>rooms\Room_8</room>
       <room>rooms\Room_9</room>
+      <room>rooms\Room_10</room>
+      <room>rooms\Room_11</room>
     </rooms>
   </rooms>
   <help>
