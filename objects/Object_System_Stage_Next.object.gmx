@@ -31,8 +31,10 @@
     
     with( Object_System_StageButton ) { instance_destroy(); }
     with( Object_System_StageSelect ) { instance_destroy(); }
+    with( Object_System_World ) { instance_destroy(); }
     
     instance_create( 0, 0, Object_System_StageSelect );
+    instance_create( 640, 96, Object_System_World );
 
 }
 </string>
