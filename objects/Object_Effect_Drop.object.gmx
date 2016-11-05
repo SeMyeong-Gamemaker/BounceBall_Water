@@ -105,8 +105,8 @@ if( image_alpha &lt;= 0 ) { instance_destroy(); }
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext( Sprite_Effect_Drop, -1, x, y, 1, 1, 0, c_white, 1 - Pollution );
-draw_sprite_ext( Sprite_Effect_Drop_Polluted, -1, x, y, 1, 1, 0, c_white, Pollution );
+            <string>draw_sprite_ext( Sprite_Effect_Drop, -1, x, y, 1, 1, 0, c_white, ( 1 - Pollution ) * image_alpha );
+draw_sprite_ext( Sprite_Effect_Drop_Polluted, -1, x, y, 1, 1, 0, c_white, Pollution * image_alpha );
 </string>
           </argument>
         </arguments>
