@@ -27,8 +27,6 @@
             <kind>1</kind>
             <string>global.Stage_Last = 0;
 
-global.Stage_Page = 0;
-
 global.Stage_Room[0] = 0;
 global.Stage_Room[1] = Room_1;
 global.Stage_Room[2] = Room_2;
@@ -43,6 +41,9 @@ global.Stage_Room[10] = Room_10;
 global.Stage_Room[11] = Room_11;
 global.Stage_Room[12] = Room_12;
 global.Stage_Room[13] = Room_13;
+global.Stage_Room[14] = Room_14;
+global.Stage_Room[15] = Room_15;
+global.Stage_Room[16] = Room_16;
 
 for( i = 0; i &lt; array_length_1d( global.Stage_Room ); i++ ) {
 
@@ -53,6 +54,9 @@ for( i = 0; i &lt; array_length_1d( global.Stage_Room ); i++ ) {
 }
 
 global.Stage_Unlock[1] = true;
+
+global.Stage_Page = 0;
+global.Stage_Page_Max = ( array_length_1d( global.Stage_Room ) - 2 ) div 15;
 </string>
           </argument>
         </arguments>
