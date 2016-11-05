@@ -55,7 +55,9 @@ if( global.Stage_Unlock[ Stage_Number ] == true ) {
 
     draw_sprite( Sprite_System_StageButton, -1, x, y );
     draw_set_alpha( 0.5 );
-    draw_text_transformed( x, y, string( Stage_Number ) + "##" + string( floor( global.Stage_Completion[ Stage_Number ] * 100 ) ) + "%", 1, 1, 0 );
+    draw_text_transformed( x, y, string( Stage_Number ) + "##", 1, 1, 0 );
+    if( global.Stage_Completion[ Stage_Number ] != 0 ) { draw_sprite( Sprite_System_StageButton_Completion, global.Stage_Completion[ Stage_Number ] * 100 div 20 - 1, x, y + 32 ); }
+    //draw_text_transformed( x, y, string( Stage_Number ) + "##" + string( floor( global.Stage_Completion[ Stage_Number ] * 100 ) ) + "%", 1, 1, 0 );
     draw_set_alpha( 1 );
     
 } else { draw_sprite( Sprite_System_StageButton_Locked, -1, x, y ); }

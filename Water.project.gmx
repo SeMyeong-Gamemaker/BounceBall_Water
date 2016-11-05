@@ -8,11 +8,17 @@
   <sprites name="sprites">
     <sprites name="Ball">
       <sprite>sprites\Sprite_Ball_64</sprite>
+      <sprite>sprites\Sprite_Ice_64</sprite>
     </sprites>
     <sprites name="Wall">
       <sprite>sprites\Sprite_Wall_64</sprite>
       <sprite>sprites\Sprite_Pipe_64</sprite>
-      <sprite>sprites\Sprite_Sewer_64</sprite>
+      <sprite>sprites\Sprite_Filter_64</sprite>
+      <sprite>sprites\Sprite_Sponge_64</sprite>
+      <sprite>sprites\Sprite_Cooler_64</sprite>
+      <sprite>sprites\Sprite_Heater_64</sprite>
+      <sprite>sprites\Sprite_Pipe_In</sprite>
+      <sprite>sprites\Sprite_Pipe_Out</sprite>
       <sprites name="Water">
         <sprite>sprites\Sprite_Water_64</sprite>
         <sprite>sprites\Sprite_Water_64_Mask</sprite>
@@ -28,6 +34,7 @@
     <sprites name="System">
       <sprite>sprites\Sprite_System_StageButton</sprite>
       <sprite>sprites\Sprite_System_StageButton_Locked</sprite>
+      <sprite>sprites\Sprite_System_StageButton_Completion</sprite>
       <sprite>sprites\Sprite_System_BigButton</sprite>
     </sprites>
     <sprite>sprites\sprite15</sprite>
@@ -97,9 +104,6 @@
       <room>rooms\Room_5</room>
       <room>rooms\Room_6</room>
       <room>rooms\Room_7</room>
-      <room>rooms\Room_8</room>
-      <room>rooms\Room_9</room>
-      <room>rooms\Room_10</room>
     </rooms>
   </rooms>
   <help>

@@ -31,7 +31,7 @@ if( instance_number( Object_Fire_64 ) &gt; 0 ) {
 
     global.Completion = 0;
     
-    if( room_get_name( room ) == "Room_3" ) { global.Completion = 1; }
+    if( room_get_name( room ) == "Room_6" ) { global.Completion = 1; }
 
 }
 else { global.Completion = 1; }
