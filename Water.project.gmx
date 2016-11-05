@@ -7,8 +7,14 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Ball">
-      <sprite>sprites\Sprite_Ball_64</sprite>
-      <sprite>sprites\Sprite_Ball_Polluted_64</sprite>
+      <sprites name="Ice">
+        <sprite>sprites\Sprite_Ball_Ice_64</sprite>
+        <sprite>sprites\Sprite_Ball_Ice_Polluted_64</sprite>
+      </sprites>
+      <sprites name="Normal">
+        <sprite>sprites\Sprite_Ball_64</sprite>
+        <sprite>sprites\Sprite_Ball_Polluted_64</sprite>
+      </sprites>
     </sprites>
     <sprites name="Wall">
       <sprite>sprites\Sprite_Wall_64</sprite>
@@ -51,6 +57,10 @@
       <sprite>sprites\Sprite_System_StageButton_Locked</sprite>
       <sprite>sprites\Sprite_System_StageButton_Completion</sprite>
       <sprite>sprites\Sprite_System_BigButton</sprite>
+      <sprites name="World">
+        <sprite>sprites\Sprite_System_World_1</sprite>
+        <sprite>sprites\Sprite_System_World_2</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\sprite15</sprite>
     <sprite>sprites\sprite16</sprite>
@@ -112,6 +122,7 @@
       <object>objects\Object_System_StageButton</object>
       <object>objects\Object_System_Stage_Prev</object>
       <object>objects\Object_System_Stage_Next</object>
+      <object>objects\Object_System_World</object>
     </objects>
     <objects name="Title">
       <object>objects\Object_Title_Play</object>
@@ -143,6 +154,7 @@
     </rooms>
     <rooms name="World 2">
       <room>rooms\Room_16</room>
+      <room>rooms\Room_17</room>
     </rooms>
   </rooms>
   <help>
