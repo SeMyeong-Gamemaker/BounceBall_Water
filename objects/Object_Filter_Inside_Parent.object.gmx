@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,42 +25,36 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.Stage_Last = 0;
-
-global.Stage_Room[0] = 0;
-global.Stage_Room[1] = Room_1;
-global.Stage_Room[2] = Room_2;
-global.Stage_Room[3] = Room_3;
-global.Stage_Room[4] = Room_4;
-global.Stage_Room[5] = Room_5;
-global.Stage_Room[6] = Room_6;
-global.Stage_Room[7] = Room_7;
-global.Stage_Room[8] = Room_8;
-global.Stage_Room[9] = Room_9;
-global.Stage_Room[10] = Room_10;
-global.Stage_Room[11] = Room_11;
-global.Stage_Room[12] = Room_12;
-global.Stage_Room[13] = Room_13;
-global.Stage_Room[14] = Room_14;
-global.Stage_Room[15] = Room_15;
-global.Stage_Room[16] = Room_16;
-global.Stage_Room[17] = Room_17;
-global.Stage_Room[18] = Room_18;
-global.Stage_Room[19] = Room_19;
-global.Stage_Room[20] = Room_20;
-
-for( i = 0; i &lt; array_length_1d( global.Stage_Room ); i++ ) {
-
-    global.Stage_Death[i] = 0;
-    global.Stage_Completion[i] = 0;
-    global.Stage_Unlock[i] = false;
+            <string>Filter = 0;
+Filter_Max = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Object_Ball">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if( global.Ball_Pollution &gt; 0 &amp;&amp; Filter &gt; 0 ) {
+    
+    global.Ball_Pollution--;
+    Filter--;
 
 }
-
-global.Stage_Unlock[1] = true;
-
-global.Stage_Page = 0;
-global.Stage_Page_Max = ( array_length_1d( global.Stage_Room ) - 2 ) div 15;
 </string>
           </argument>
         </arguments>

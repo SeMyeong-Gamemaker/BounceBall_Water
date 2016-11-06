@@ -12,6 +12,7 @@
   <showcolour>-1</showcolour>
   <code>global.Stage_Name = "100% 오염이 되지 않도록 하세요"
 global.Stage_Number = 11;
+global.Stage_Last = 11;
 randomize();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>

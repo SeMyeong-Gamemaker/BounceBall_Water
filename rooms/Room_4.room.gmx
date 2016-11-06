@@ -12,6 +12,7 @@
   <showcolour>-1</showcolour>
   <code>global.Stage_Name = "이동 2"
 global.Stage_Number = 4;
+global.Stage_Last = 4;
 randomize();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>

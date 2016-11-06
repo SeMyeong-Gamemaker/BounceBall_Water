@@ -45,8 +45,10 @@
         <sprite>sprites\Sprite_Sponge_64</sprite>
         <sprite>sprites\Sprite_Sponge_Wet_64</sprite>
       </sprites>
+      <sprites name="Fire">
+        <sprite>sprites\Sprite_Fire_64</sprite>
+      </sprites>
     </sprites>
-    <sprite>sprites\Sprite_Fire_64</sprite>
     <sprites name="UI">
       <sprite>sprites\Sprite_UI_Bar</sprite>
     </sprites>
@@ -62,7 +64,6 @@
         <sprite>sprites\Sprite_System_World_2</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\sprite15</sprite>
     <sprite>sprites\sprite16</sprite>
     <sprites name="Background">
       <sprite>sprites\Sprite_Background_Web</sprite>
@@ -104,6 +105,8 @@
       <objects name="Filter">
         <object>objects\Object_Filter_Parent</object>
         <object>objects\Object_Filter_64</object>
+        <object>objects\Object_Filter_Inside_Parent</object>
+        <object>objects\Object_Filter_Inside_64</object>
       </objects>
       <objects name="Purifier">
         <object>objects\Object_Purifier_Parent</object>
@@ -123,9 +126,9 @@
       <object>objects\Object_System_Stage_Prev</object>
       <object>objects\Object_System_Stage_Next</object>
       <object>objects\Object_System_World</object>
-    </objects>
-    <objects name="Title">
-      <object>objects\Object_Title_Play</object>
+      <object>objects\Object_System_Play</object>
+      <object>objects\Object_System_Select</object>
+      <object>objects\Object_System_Next</object>
     </objects>
     <objects name="Effect">
       <object>objects\Object_Effect_Drop</object>
@@ -155,6 +158,9 @@
     <rooms name="World 2">
       <room>rooms\Room_16</room>
       <room>rooms\Room_17</room>
+      <room>rooms\Room_18</room>
+      <room>rooms\Room_19</room>
+      <room>rooms\Room_20</room>
     </rooms>
   </rooms>
   <help>
