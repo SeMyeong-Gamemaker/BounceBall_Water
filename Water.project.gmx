@@ -6,6 +6,8 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\Sprite_Controll</sprite>
+    <sprite>sprites\sprite16</sprite>
     <sprites name="Ball">
       <sprites name="Ice">
         <sprite>sprites\Sprite_Ball_Ice_64</sprite>
@@ -52,25 +54,45 @@
     <sprites name="UI">
       <sprite>sprites\Sprite_UI_Bar</sprite>
     </sprites>
-    <sprite>sprites\Sprite_Controll</sprite>
     <sprites name="System">
-      <sprite>sprites\Sprite_System_StageButton</sprite>
-      <sprite>sprites\Sprite_System_StageButton_Next</sprite>
-      <sprite>sprites\Sprite_System_StageButton_Locked</sprite>
-      <sprite>sprites\Sprite_System_StageButton_Completion</sprite>
       <sprite>sprites\Sprite_System_BigButton</sprite>
+      <sprites name="Page">
+        <sprite>sprites\Sprite_System_Page_1</sprite>
+        <sprite>sprites\Sprite_System_Page_2</sprite>
+      </sprites>
+      <sprites name="StageButton">
+        <sprite>sprites\Sprite_System_StageButton</sprite>
+        <sprite>sprites\Sprite_System_StageButton_Next</sprite>
+        <sprite>sprites\Sprite_System_StageButton_Locked</sprite>
+        <sprite>sprites\Sprite_System_StageButton_Completion</sprite>
+      </sprites>
+      <sprites name="Icon">
+        <sprite>sprites\Sprite_Icon_Death</sprite>
+        <sprite>sprites\Sprite_Icon_Fire</sprite>
+        <sprite>sprites\Sprite_Icon_Time</sprite>
+        <sprite>sprites\Sprite_Icon_Completion</sprite>
+        <sprite>sprites\Sprite_Icon_Death_Perfect</sprite>
+        <sprite>sprites\Sprite_Icon_Fire_Perfect</sprite>
+        <sprite>sprites\Sprite_Icon_Tutorial</sprite>
+      </sprites>
       <sprites name="World">
-        <sprite>sprites\Sprite_System_World_1</sprite>
-        <sprite>sprites\Sprite_System_World_2</sprite>
+        <sprite>sprites\Sprite_System_World_Tutorial</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\sprite16</sprite>
     <sprites name="Background">
       <sprite>sprites\Sprite_Background_Web</sprite>
     </sprites>
     <sprites name="Effect">
       <sprite>sprites\Sprite_Effect_Drop</sprite>
       <sprite>sprites\Sprite_Effect_Drop_Polluted</sprite>
+    </sprites>
+    <sprites name="Item">
+      <sprite>sprites\Sprite_Item_Water</sprite>
+      <sprite>sprites\Sprite_Item_Ice</sprite>
+      <sprite>sprites\Sprite_Item_Pollution</sprite>
+      <sprite>sprites\Sprite_Item_Fire</sprite>
+      <sprite>sprites\Sprite_Item_Gum</sprite>
+      <sprite>sprites\sprite41</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -111,24 +133,39 @@
       <objects name="Purifier">
         <object>objects\Object_Purifier_Parent</object>
         <object>objects\Object_Purifier_64</object>
+        <object>objects\Object_Purifier_Inside_Parent</object>
+        <object>objects\Object_Purifier_Inside_64</object>
       </objects>
       <objects name="Sponge">
         <object>objects\Object_Sponge_Parent</object>
         <object>objects\Object_Sponge_64</object>
+        <object>objects\Object_Sponge_Inside_Parent</object>
+        <object>objects\Object_Sponge_Inside_64</object>
       </objects>
       <object>objects\Object_Pipe_64</object>
     </objects>
     <objects name="System">
-      <object>objects\Object_System_StageInGame</object>
-      <object>objects\Object_System_Stage</object>
-      <object>objects\Object_System_StageSelect</object>
-      <object>objects\Object_System_StageButton</object>
-      <object>objects\Object_System_Stage_Prev</object>
-      <object>objects\Object_System_Stage_Next</object>
-      <object>objects\Object_System_World</object>
+      <object>objects\Object_System_Page</object>
       <object>objects\Object_System_Play</object>
       <object>objects\Object_System_Select</object>
       <object>objects\Object_System_Next</object>
+      <objects name="Stage">
+        <object>objects\Object_System_Stage</object>
+        <object>objects\Object_System_StageInGame</object>
+        <object>objects\Object_System_StageButton</object>
+        <object>objects\Object_System_StageSelect</object>
+        <object>objects\Object_System_Stage_Prev</object>
+        <object>objects\Object_System_Stage_Next</object>
+      </objects>
+      <objects name="Record">
+        <object>objects\Object_System_Record_Death</object>
+        <object>objects\Object_System_Record_Time</object>
+        <object>objects\Object_System_Record_Completion</object>
+        <object>objects\Object_System_Record_Fire</object>
+      </objects>
+      <objects name="World">
+        <object>objects\Object_System_World_Tutorial</object>
+      </objects>
     </objects>
     <objects name="Effect">
       <object>objects\Object_Effect_Drop</object>
@@ -136,31 +173,35 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
+    <room>rooms\Room_World</room>
     <room>rooms\Room_Stage</room>
     <room>rooms\Room_Complete</room>
     <rooms name="World 1">
-      <room>rooms\Room_1</room>
-      <room>rooms\Room_2</room>
-      <room>rooms\Room_3</room>
-      <room>rooms\Room_4</room>
-      <room>rooms\Room_5</room>
-      <room>rooms\Room_6</room>
-      <room>rooms\Room_7</room>
-      <room>rooms\Room_8</room>
-      <room>rooms\Room_9</room>
-      <room>rooms\Room_10</room>
-      <room>rooms\Room_11</room>
-      <room>rooms\Room_12</room>
-      <room>rooms\Room_13</room>
-      <room>rooms\Room_14</room>
-      <room>rooms\Room_15</room>
-    </rooms>
-    <rooms name="World 2">
-      <room>rooms\Room_16</room>
-      <room>rooms\Room_17</room>
-      <room>rooms\Room_18</room>
-      <room>rooms\Room_19</room>
-      <room>rooms\Room_20</room>
+      <rooms name="Page 1">
+        <room>rooms\Room_1</room>
+        <room>rooms\Room_2</room>
+        <room>rooms\Room_3</room>
+        <room>rooms\Room_4</room>
+        <room>rooms\Room_5</room>
+        <room>rooms\Room_6</room>
+        <room>rooms\Room_7</room>
+        <room>rooms\Room_8</room>
+        <room>rooms\Room_9</room>
+        <room>rooms\Room_10</room>
+        <room>rooms\Room_11</room>
+        <room>rooms\Room_12</room>
+        <room>rooms\Room_13</room>
+        <room>rooms\Room_14</room>
+        <room>rooms\Room_15</room>
+      </rooms>
+      <rooms name="Page 2">
+        <room>rooms\Room_16</room>
+        <room>rooms\Room_17</room>
+        <room>rooms\Room_18</room>
+        <room>rooms\Room_19</room>
+        <room>rooms\Room_20</room>
+        <room>rooms\Room_21</room>
+      </rooms>
     </rooms>
   </rooms>
   <help>

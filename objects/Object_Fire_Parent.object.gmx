@@ -54,14 +54,24 @@ Fire_Health_Max = 0;
     global.Ball_Pollution -= 2;
     
     Fire_Health--;
-    if( Fire_Health &lt;= 0 ) { instance_destroy(); }   
+    if( Fire_Health &lt;= 0 ) { 
+    
+        global.Stage_Fire_Amount[global.Stage_Number]++;
+        instance_destroy();
+    
+    }   
 
 } else if( global.Ball_Water &gt; 0 ) {
 
     global.Ball_Water--;
     
     Fire_Health--;
-    if( Fire_Health &lt;= 0 ) { instance_destroy(); }
+    if( Fire_Health &lt;= 0 ) {
+    
+        global.Stage_Fire_Amount[global.Stage_Number]++;
+        instance_destroy();
+    
+    }
 
 } else { with( other ) { instance_destroy(); } }
 </string>

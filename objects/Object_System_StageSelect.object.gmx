@@ -33,16 +33,16 @@ if( array_length_1d( global.Stage_Room ) - 1 &lt; 15 * ( global.Stage_Page + 1 )
     for( i = ( 15 * global.Stage_Page ) + 1; i &lt;= array_length_1d( global.Stage_Room ) - 1; i++ ) {
 
         with( instance_create( Stage_X, Stage_Y, Object_System_StageButton ) ) {
-    
-            Stage_Number = other.i;
-    
+            
+            Stage_Number = other.i; 
+            
         }
         Stage_X += room_width / 6;
     
         if( i % 5 == 0 ) {
     
             Stage_X = room_width / 6;
-            Stage_Y = room_height / 5 * ( 2 + i div 5 );
+            Stage_Y += room_height / 5;
     
         }
 
@@ -62,7 +62,7 @@ if( array_length_1d( global.Stage_Room ) - 1 &lt; 15 * ( global.Stage_Page + 1 )
         if( i % 5 == 0 ) {
     
             Stage_X = room_width / 6;
-            Stage_Y = room_height / 5 * ( 2 + i div 5 );
+            Stage_Y += room_height / 5;
     
         }
 

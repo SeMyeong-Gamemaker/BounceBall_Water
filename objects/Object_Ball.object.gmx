@@ -210,19 +210,39 @@ view_angle[0] = global.Camera_Angle * 15 * ( point_distance( x, 0, global.Camera
 
 if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) ) {
 
-    if( global.Completion == 0 ) {
+    if( global.Completion == 0 ) { global.Stage_Completion[ global.Stage_Number ] = floor( ( 1 / ( global.Stage_Fire[ global.Stage_Number ] + 1 ) + ( global.Stage_Fire[ global.Stage_Number ] - instance_number( Object_Fire_64 ) ) / ( global.Stage_Fire[ global.Stage_Number ] + 1 ) ) * 100 ) / 100; }
+    else { global.Stage_Completion[ global.Stage_Number ] = 1; }
+
+    if( global.Stage_Completion_Record[global.Stage_Number] == -1 ) {
     
-        global.Completion = floor( (  1 / ( global.Stage_Fire + 1 ) + ( global.Stage_Fire - instance_number( Object_Fire_64 ) ) / ( global.Stage_Fire + 1 ) ) * 100 ) / 100;
-        if( global.Stage_Completion[ global.Stage_Number ] &lt; global.Completion ) { global.Stage_Completion[ global.Stage_Number ] = global.Completion; }
+        global.Stage_Completion_Record[global.Stage_Number] = global.Stage_Completion[global.Stage_Number];
     
-    } else { global.Stage_Completion[ global.Stage_Number ] = global.Completion; }
+    } else if( global.Stage_Completion[global.Stage_Number] &gt; global.Stage_Completion_Record[global.Stage_Number] ) { global.Stage_Completion_Record[global.Stage_Number] = global.Stage_Completion[global.Stage_Number]; }    
+    
+    if( global.Stage_Death_Record[global.Stage_Number] == -1 ) {
+    
+        global.Stage_Death_Record[global.Stage_Number] = global.Stage_Death[global.Stage_Number];
+    
+    } else if( global.Stage_Death[global.Stage_Number] &lt; global.Stage_Death_Record[global.Stage_Number] ) { global.Stage_Death_Record[global.Stage_Number] = global.Stage_Death[global.Stage_Number]; }
+
+    if( global.Stage_Death_Record[global.Stage_Number] == -1 ) {
+    
+        global.Stage_Fire_Record[global.Stage_Number] = global.Stage_Fire_Amount[global.Stage_Number];
+    
+    } else if( global.Stage_Fire_Amount &gt; global.Stage_Fire_Record[global.Stage_Number] ) { global.Stage_Fire_Record[global.Stage_Number] = global.Stage_Fire_Amount[global.Stage_Number]; }
+    
+    if( global.Stage_Time_Record[global.Stage_Number] == -1 ) {
+    
+        global.Stage_Time_Record[global.Stage_Number] = global.Stage_Time[global.Stage_Number];
+    
+    } else if( global.Stage_Time[global.Stage_Number] &lt; global.Stage_Time_Record[global.Stage_Number] ) { global.Stage_Time_Record[global.Stage_Number] = global.Stage_Time[global.Stage_Number]; }
     
     if( global.Stage_Number + 1 &lt; array_length_1d( global.Stage_Room ) ) {
     
         global.Stage_Unlock[ global.Stage_Number + 1 ] = true;
     
     }
-
+    
     room_goto( Room_Complete );
 
 }
@@ -235,6 +255,160 @@ else{
 x = round( x );
 y = round( y );
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Object_Sponge_Parent">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>move_contact_solid( direction, -1 );
+
+//Vertical
+
+if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) ) {
+
+    vspeed = - global.Ball_Jump_Height;
+
+}
+else{
+
+    vspeed = 0;
+
+}
+
+x = round( x );
+y = round( y );
+
+repeat( 10 ) {
+
+    with( instance_create( x, y + ( sprite_height / 2 ), Object_Effect_Drop ) ) {
+    
+        motion_add( random_range( 30, 150 ), random_range( 5, 10 ) );
+    
+    }
+
+}
+
+if( other.Sponge &gt; 0 ) {
+
+    if( global.Ball_Water &gt;= 10 &amp;&amp; other.Sponge &gt;= 10 ) {
+    
+        global.Ball_Water -= 10;
+        other.Sponge -= 10;
+
+    } else if( global.Ball_Water &lt; other.Sponge ) {
+    
+        other.Sponge -= global.Ball_Water;
+        global.Ball_Water = 0;
+        
+    } else if( global.Ball_Water &gt; other.Sponge ) {
+    
+        global.Ball_Water -= other.Sponge;
+        other.Sponge = 0;
+    
+    } else {
+    
+        global.Ball_Water = 0;
+        other.Sponge = 0;
+        
+    }
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Object_Purifier_Parent">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>move_contact_solid( direction, -1 );
+
+//Vertical
+
+if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) ) {
+
+    vspeed = - global.Ball_Jump_Height;
+
+}
+else{
+
+    vspeed = 0;
+
+}
+
+x = round( x );
+y = round( y );
+
+repeat( 10 ) {
+
+    with( instance_create( x, y + ( sprite_height / 2 ), Object_Effect_Drop ) ) {
+    
+        motion_add( random_range( 30, 150 ), random_range( 5, 10 ) );
+    
+    }
+
+}
+
+if( other.Purifier &gt; 0 ) {
+
+    if( global.Ball_Pollution &gt;= 10 &amp;&amp; other.Purifier &gt;= 10 ) {
+    
+        global.Ball_Water += 10;
+        global.Ball_Pollution -= 10;
+        other.Purifier -= 10;
+
+    } else if( global.Ball_Pollution &lt; other.Purifier ) {
+    
+        other.Purifier -= global.Ball_Pollution;
+        global.Ball_Water += global.Ball_Pollution;
+        global.Ball_Pollution = 0;
+        
+    } else if( global.Ball_Pollution &gt; other.Purifier ) {
+    
+        global.Ball_Pollution -= other.Purifier;
+        global.Ball_Water += other.Purifier;
+        other.Purifier = 0;
+    
+    } else {
+    
+        global.Ball_Water += other.Purifier;
+        global.Ball_Pollution = 0;
+        other.Purifier = 0;
+        
+    }
+
+}
 </string>
           </argument>
         </arguments>
@@ -285,10 +459,29 @@ repeat( 10 ) {
 
 }
 
-if( global.Ball_Pollution &gt; 0 &amp;&amp; other.Filter &gt; 0 ) {
+if( other.Filter &gt; 0 ) {
+
+    if( global.Ball_Pollution &gt;= 10 &amp;&amp; other.Filter &gt;= 10 ) {
     
-    global.Ball_Pollution -= 10;
-    other.Filter -= 10;
+        global.Ball_Pollution -= 10;
+        other.Filter -= 10;
+
+    } else if( global.Ball_Pollution &lt; other.Filter ) {
+    
+        other.Filter -= global.Ball_Pollution;
+        global.Ball_Pollution = 0;
+        
+    } else if( global.Ball_Pollution &gt; other.Filter ) {
+    
+        global.Ball_Pollution -= other.Filter;
+        other.Filter = 0;
+    
+    } else {
+    
+        global.Ball_Pollution = 0;
+        other.Filter = 0;
+        
+    }
 
 }
 </string>
