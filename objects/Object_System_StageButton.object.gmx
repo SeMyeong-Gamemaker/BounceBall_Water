@@ -92,7 +92,7 @@ if( global.Stage_Unlock[ Stage_Number ] == true ) {
     if( Tutorial == true ) { draw_sprite( Sprite_Icon_Tutorial, -1, x, y + 8 ); }
     draw_text_transformed( x, y, string( Stage_Number ) + "##", 1, 1, 0 );
     if( global.Stage_Completion_Record[ Stage_Number ] &gt; 0 ) { draw_sprite( Sprite_System_StageButton_Completion, global.Stage_Completion_Record[ Stage_Number ] * 100 div 20 - 1, x, y + 32 ); }
-    if( global.Stage_Fire_Record[ Stage_Number ] == 0 ) { draw_sprite( Sprite_Icon_Fire_Perfect, -1, x - ( sprite_width / 2 ) + 16, y - ( sprite_height / 2 ) + 16 ); }
+    if( global.Stage_Fire_Record[ Stage_Number ] == global.Stage_Fire[ Stage_Number ] ) { draw_sprite( Sprite_Icon_Fire_Perfect, -1, x - ( sprite_width / 2 ) + 16, y - ( sprite_height / 2 ) + 16 ); }
     if( global.Stage_Death_Record[ Stage_Number ] == 0 ) { draw_sprite( Sprite_Icon_Death_Perfect, -1, x + ( sprite_width / 2 ) - 16, y - ( sprite_height / 2 ) + 16 ); }
     
     draw_set_alpha( 1 );
