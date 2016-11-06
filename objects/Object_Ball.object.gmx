@@ -288,7 +288,7 @@ repeat( 10 ) {
 if( global.Ball_Pollution &gt; 0 &amp;&amp; other.Filter &gt; 0 ) {
     
     global.Ball_Pollution -= 10;
-    Filter -= 10;
+    other.Filter -= 10;
 
 }
 </string>
