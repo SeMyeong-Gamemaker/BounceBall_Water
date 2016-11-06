@@ -73,6 +73,10 @@
         <sprite>sprites\Sprite_Icon_Completion</sprite>
         <sprite>sprites\Sprite_Icon_Death_Perfect</sprite>
         <sprite>sprites\Sprite_Icon_Fire_Perfect</sprite>
+        <sprite>sprites\Sprite_Icon_Tutorial</sprite>
+      </sprites>
+      <sprites name="World">
+        <sprite>sprites\Sprite_System_World_Tutorial</sprite>
       </sprites>
     </sprites>
     <sprites name="Background">
@@ -159,6 +163,9 @@
         <object>objects\Object_System_Record_Completion</object>
         <object>objects\Object_System_Record_Fire</object>
       </objects>
+      <objects name="World">
+        <object>objects\Object_System_World_Tutorial</object>
+      </objects>
     </objects>
     <objects name="Effect">
       <object>objects\Object_Effect_Drop</object>
@@ -166,6 +173,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
+    <room>rooms\Room_World</room>
     <room>rooms\Room_Stage</room>
     <room>rooms\Room_Complete</room>
     <rooms name="World 1">
