@@ -52,7 +52,18 @@ global.Stage_Room[20] = Room_20;
 for( i = 0; i &lt; array_length_1d( global.Stage_Room ); i++ ) {
 
     global.Stage_Death[i] = 0;
+    global.Stage_Death_Record[i] = -1;
+    
+    global.Stage_Fire[i] = 0;
+    global.Stage_Fire_Amount[i] = 0;
+    global.Stage_Fire_Record[i] = -1;
+    
+    global.Stage_Time[i] = 0;
+    global.Stage_Time_Record[i] = -1;
+    
     global.Stage_Completion[i] = 0;
+    global.Stage_Completion_Record[i] = -1;
+    
     global.Stage_Unlock[i] = false;
 
 }

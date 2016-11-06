@@ -54,7 +54,7 @@
     <instance objName="Object_System_StageSelect" x="0" y="0" name="inst_EAB2953C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_System_Stage_Prev" x="64" y="672" name="inst_6BDF2ED7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_System_Stage_Next" x="1216" y="672" name="inst_E19BFDF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_System_World" x="640" y="96" name="inst_6E0D40D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_System_Page" x="640" y="96" name="inst_6E0D40D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
