@@ -59,10 +59,13 @@ draw_set_valign( fa_middle );
 if( global.Stage_Unlock[ Stage_Number ] == true ) {
 
     draw_sprite( Sprite_System_StageButton, -1, x, y );
+    
     draw_set_alpha( 0.5 );
     draw_text_transformed( x, y, string( Stage_Number ) + "##", 1, 1, 0 );
     if( global.Stage_Completion_Record[ Stage_Number ] &gt; 0 ) { draw_sprite( Sprite_System_StageButton_Completion, global.Stage_Completion_Record[ Stage_Number ] * 100 div 20 - 1, x, y + 32 ); }
-    //draw_text_transformed( x, y, string( Stage_Number ) + "##" + string( floor( global.Stage_Completion[ Stage_Number ] * 100 ) ) + "%", 1, 1, 0 );
+    if( global.Stage_Fire_Record[ Stage_Number ] == 0 ) { draw_sprite( Sprite_Icon_Fire_Perfect, -1, x - ( sprite_width / 2 ) + 16, y - ( sprite_height / 2 ) + 16 ); }
+    if( global.Stage_Death_Record[ Stage_Number ] == 0 ) { draw_sprite( Sprite_Icon_Death_Perfect, -1, x + ( sprite_width / 2 ) - 16, y - ( sprite_height / 2 ) + 16 ); }
+    
     draw_set_alpha( 1 );
     
 } else { draw_sprite( Sprite_System_StageButton_Locked, -1, x, y ); }

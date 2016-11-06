@@ -67,10 +67,12 @@
         <sprite>sprites\Sprite_System_StageButton_Completion</sprite>
       </sprites>
       <sprites name="Icon">
-        <sprite>sprites\Sprite_Icon_Dead</sprite>
+        <sprite>sprites\Sprite_Icon_Death</sprite>
         <sprite>sprites\Sprite_Icon_Fire</sprite>
         <sprite>sprites\Sprite_Icon_Time</sprite>
         <sprite>sprites\Sprite_Icon_Completion</sprite>
+        <sprite>sprites\Sprite_Icon_Death_Perfect</sprite>
+        <sprite>sprites\Sprite_Icon_Fire_Perfect</sprite>
       </sprites>
     </sprites>
     <sprites name="Background">
