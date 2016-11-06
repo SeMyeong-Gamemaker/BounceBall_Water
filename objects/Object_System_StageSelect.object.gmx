@@ -42,7 +42,7 @@ if( array_length_1d( global.Stage_Room ) - 1 &lt; 15 * ( global.Stage_Page + 1 )
         if( i % 5 == 0 ) {
     
             Stage_X = room_width / 6;
-            Stage_Y = room_height / 5 * ( 2 + i div 5 );
+            Stage_Y += room_height / 5;
     
         }
 
@@ -62,7 +62,7 @@ if( array_length_1d( global.Stage_Room ) - 1 &lt; 15 * ( global.Stage_Page + 1 )
         if( i % 5 == 0 ) {
     
             Stage_X = room_width / 6;
-            Stage_Y = room_height / 5 * ( 2 + i div 5 );
+            Stage_Y += room_height / 5;
     
         }
 
