@@ -12,6 +12,7 @@
   <showcolour>-1</showcolour>
   <code>global.Stage_Name = "필터 4"
 global.Stage_Number = 20;
+global.Stage_Last = 20;
 randomize();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>

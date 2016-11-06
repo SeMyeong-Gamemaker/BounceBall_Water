@@ -12,6 +12,7 @@
   <showcolour>-1</showcolour>
   <code>global.Stage_Name = "왼쪽 화면을 눌러 파이프로 들어가세요"
 global.Stage_Number = 2;
+global.Stage_Last = 2;
 randomize();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>

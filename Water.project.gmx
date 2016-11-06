@@ -126,9 +126,9 @@
       <object>objects\Object_System_Stage_Prev</object>
       <object>objects\Object_System_Stage_Next</object>
       <object>objects\Object_System_World</object>
-    </objects>
-    <objects name="Title">
-      <object>objects\Object_Title_Play</object>
+      <object>objects\Object_System_Play</object>
+      <object>objects\Object_System_Select</object>
+      <object>objects\Object_System_Next</object>
     </objects>
     <objects name="Effect">
       <object>objects\Object_Effect_Drop</object>
