@@ -34,7 +34,4 @@
 - 정식 버전 <code>v1.0.0</code>
 - 안정 버전 <code>1.0.0</code>
 - 베타 버전 <code>1.0.0_0</code>
-<<<<<<< HEAD
-=======
 - 베타 버그픽스 버전 <code>1.0.0_0a</code>
->>>>>>> origin/Unstable
