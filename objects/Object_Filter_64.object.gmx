@@ -6,7 +6,7 @@
   <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>Object_Filter_Parent</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>Sprite_Filter_64_Mask</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
