@@ -20,7 +20,6 @@
     </sprites>
     <sprites name="Wall">
       <sprite>sprites\Sprite_Wall_64</sprite>
-      <sprite>sprites\Sprite_Wall_Broken_64</sprite>
       <sprite>sprites\Sprite_Cooler_64</sprite>
       <sprite>sprites\Sprite_Heater_64</sprite>
       <sprite>sprites\Sprite_Ice_64</sprite>
@@ -52,6 +51,11 @@
       </sprites>
       <sprites name="Fire">
         <sprite>sprites\Sprite_Fire_64</sprite>
+      </sprites>
+      <sprite>sprites\sprite53</sprite>
+      <sprites name="Broken">
+        <sprite>sprites\Sprite_Wall_Broken_64</sprite>
+        <sprite>sprites\Sprite_Wall_Broken_64_Mask</sprite>
       </sprites>
     </sprites>
     <sprites name="UI">

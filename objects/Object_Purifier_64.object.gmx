@@ -27,6 +27,31 @@
             <kind>1</kind>
             <string>Purifier = 50;
 Purifier_Max = 50;
+Shadow = true;
+alarm[0] = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if( !place_free( x, y + ( sprite_height / 2 ) ) ) { Shadow = false; }
 </string>
           </argument>
         </arguments>
@@ -49,8 +74,12 @@ Purifier_Max = 50;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext( Sprite_Purifier_64, -1, x, y, 1, 1, 0, c_dkgray, 1 );
-draw_sprite_ext( Sprite_Purifier_Polluted_64, -1, x, y, 1, 1, 0, c_dkgray, 1 - ( Purifier / Purifier_Max ) );
+            <string>if( Shadow == true ) {
+
+    draw_sprite_ext( Sprite_Purifier_64, -1, x, y, 1, 1, 0, c_dkgray, 1 );
+    draw_sprite_ext( Sprite_Purifier_Polluted_64, -1, x, y, 1, 1, 0, c_dkgray, 1 - ( Purifier / Purifier_Max ) );
+
+}
 draw_sprite_ext( Sprite_Purifier_64, -1, x, y, 1, 1, 0, c_white, 1 );
 draw_sprite_ext( Sprite_Purifier_Polluted_64, -1, x, y, 1, 1, 0, c_white, 1 - ( Purifier / Purifier_Max ) );
 </string>
