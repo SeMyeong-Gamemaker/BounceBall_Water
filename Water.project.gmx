@@ -149,6 +149,10 @@
         <object>objects\Object_Sponge_Inside_Parent</object>
         <object>objects\Object_Sponge_Inside_64</object>
       </objects>
+      <objects name="Broken">
+        <object>objects\Object_Wall_Broken_Parent</object>
+        <object>objects\Object_Wall_Broken_64</object>
+      </objects>
       <object>objects\Object_Pipe_64</object>
     </objects>
     <objects name="System">
