@@ -52,10 +52,17 @@
       <sprites name="Fire">
         <sprite>sprites\Sprite_Fire_64</sprite>
       </sprites>
-      <sprite>sprites\sprite53</sprite>
       <sprites name="Broken">
         <sprite>sprites\Sprite_Wall_Broken_64</sprite>
         <sprite>sprites\Sprite_Wall_Broken_64_Mask</sprite>
+      </sprites>
+      <sprites name="Moving">
+        <sprite>sprites\Sprite_Moving_Horizontal_64</sprite>
+        <sprite>sprites\Sprite_Moving_Vertical_64</sprite>
+      </sprites>
+      <sprites name="Drain">
+        <sprite>sprites\Sprite_Drain_Up_64</sprite>
+        <sprite>sprites\Sprite_Drain_Down_64</sprite>
       </sprites>
     </sprites>
     <sprites name="UI">
@@ -153,6 +160,16 @@
         <object>objects\Object_Wall_Broken_Parent</object>
         <object>objects\Object_Wall_Broken_64</object>
       </objects>
+      <objects name="Drain">
+        <object>objects\Object_Drain_Parent</object>
+        <object>objects\Object_Drain_Up_64</object>
+        <object>objects\Object_Drain_Down_64</object>
+      </objects>
+      <objects name="Moving">
+        <object>objects\Object_Moving_Parent</object>
+        <object>objects\Object_Moving_Horizontal_64</object>
+        <object>objects\Object_Moving_Vertical_64</object>
+      </objects>
       <object>objects\Object_Pipe_64</object>
     </objects>
     <objects name="System">
@@ -187,7 +204,7 @@
     <room>rooms\Room_World</room>
     <room>rooms\Room_Stage</room>
     <room>rooms\Room_Complete</room>
-    <rooms name="World 1">
+    <rooms name="Tutorial World">
       <rooms name="Page 1">
         <room>rooms\Room_1</room>
         <room>rooms\Room_2</room>
@@ -213,6 +230,7 @@
         <room>rooms\Room_20</room>
         <room>rooms\Room_21</room>
         <room>rooms\Room_22</room>
+        <room>rooms\Room_23</room>
       </rooms>
     </rooms>
   </rooms>
