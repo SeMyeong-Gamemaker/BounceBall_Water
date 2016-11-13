@@ -28,6 +28,7 @@
             <string>Shadow = true;
 Health = 1;
 Check = false;
+Destroyed = false;
 alarm[0] = 1;
 </string>
           </argument>

@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.Stage_Name = "깨진 블록은 밟으면 부서집니다"
+  <code>global.Stage_Name = "깨진 블럭은 밟으면 부서집니다"
 global.Stage_Number = 31;
 global.Stage_Last = 31;
 global.Stage_Fire[global.Stage_Number] = instance_number( Object_Fire_64 );
