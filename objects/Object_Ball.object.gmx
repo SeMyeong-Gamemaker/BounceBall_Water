@@ -87,8 +87,8 @@ global.Display_Height = display_get_height()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.Stage_Death[ global.Stage_Number ]++;
-global.Stage_Fire_Amount[ global.Stage_Number ] = 0;
+            <string>global.Stage_Death[ global.Stage_World,global.Stage_Number ]++;
+global.Stage_Fire_Amount[ global.Stage_World,global.Stage_Number ] = 0;
 room_restart();
 </string>
           </argument>
@@ -182,7 +182,7 @@ else if( x &gt; global.Camera_Center_X ) {
     
 }
 else { global.Camera_Angle = 0; }
-view_angle[0] = global.Camera_Angle * 15 * ( point_distance( x, 0, global.Camera_Center_X, 0 ) / global.Camera_Center_X ) * ( point_distance( 0, y, 0, global.Camera_Center_Y ) / global.Camera_Center_Y );
+view_angle[0] = global.Camera_Angle * 5 * ( point_distance( x, 0, global.Camera_Center_X, 0 ) / global.Camera_Center_X ) * ( point_distance( 0, y, 0, global.Camera_Center_Y ) / global.Camera_Center_Y );
 </string>
           </argument>
         </arguments>
@@ -388,36 +388,36 @@ repeat( 10 ) {
 
 if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) ) {
 
-    if( global.Completion == 0 ) { global.Stage_Completion[ global.Stage_Number ] = floor( ( 1 / ( global.Stage_Fire[ global.Stage_Number ] + 1 ) + ( global.Stage_Fire[ global.Stage_Number ] - instance_number( Object_Fire_64 ) ) / ( global.Stage_Fire[ global.Stage_Number ] + 1 ) ) * 100 ) / 100; }
-    else { global.Stage_Completion[ global.Stage_Number ] = 1; }
+    if( global.Completion == 0 ) { global.Stage_Completion[global.Stage_World,global.Stage_Number] = floor( ( 1 / ( global.Stage_Fire[global.Stage_World,global.Stage_Number] + 1 ) + ( global.Stage_Fire[global.Stage_World,global.Stage_Number] - instance_number( Object_Fire_64 ) ) / ( global.Stage_Fire[global.Stage_World,global.Stage_Number] + 1 ) ) * 100 ) / 100; }
+    else { global.Stage_Completion[global.Stage_World,global.Stage_Number] = 1; }
 
-    if( global.Stage_Completion_Record[global.Stage_Number] == -1 ) {
+    if( global.Stage_Completion_Record[global.Stage_World,global.Stage_Number] == -1 ) {
     
-        global.Stage_Completion_Record[global.Stage_Number] = global.Stage_Completion[global.Stage_Number];
+        global.Stage_Completion_Record[global.Stage_World,global.Stage_Number] = global.Stage_Completion[global.Stage_World,global.Stage_Number];
     
-    } else if( global.Stage_Completion[global.Stage_Number] &gt; global.Stage_Completion_Record[global.Stage_Number] ) { global.Stage_Completion_Record[global.Stage_Number] = global.Stage_Completion[global.Stage_Number]; }    
+    } else if( global.Stage_Completion[global.Stage_World,global.Stage_Number] &gt; global.Stage_Completion_Record[global.Stage_World,global.Stage_Number] ) { global.Stage_Completion_Record[global.Stage_World,global.Stage_Number] = global.Stage_Completion[global.Stage_World,global.Stage_Number]; }    
     
-    if( global.Stage_Death_Record[global.Stage_Number] == -1 ) {
+    if( global.Stage_Death_Record[global.Stage_World,global.Stage_Number] == -1 ) {
     
-        global.Stage_Death_Record[global.Stage_Number] = global.Stage_Death[global.Stage_Number];
+        global.Stage_Death_Record[global.Stage_World,global.Stage_Number] = global.Stage_Death[global.Stage_World,global.Stage_Number];
     
-    } else if( global.Stage_Death[global.Stage_Number] &lt; global.Stage_Death_Record[global.Stage_Number] ) { global.Stage_Death_Record[global.Stage_Number] = global.Stage_Death[global.Stage_Number]; }
+    } else if( global.Stage_Death[global.Stage_World,global.Stage_Number] &lt; global.Stage_Death_Record[global.Stage_World,global.Stage_Number] ) { global.Stage_Death_Record[global.Stage_World,global.Stage_Number] = global.Stage_Death[global.Stage_World,global.Stage_Number]; }
 
-    if( global.Stage_Fire_Record[global.Stage_Number] == -1 ) {
+    if( global.Stage_Fire_Record[global.Stage_World,global.Stage_Number] == -1 ) {
     
-        global.Stage_Fire_Record[global.Stage_Number] = global.Stage_Fire_Amount[global.Stage_Number];
+        global.Stage_Fire_Record[global.Stage_World,global.Stage_Number] = global.Stage_Fire_Amount[global.Stage_World,global.Stage_Number];
     
-    } else if( global.Stage_Fire_Amount[global.Stage_Number] &gt; global.Stage_Fire_Record[global.Stage_Number] ) { global.Stage_Fire_Record[global.Stage_Number] = global.Stage_Fire_Amount[global.Stage_Number]; }
+    } else if( global.Stage_Fire_Amount[global.Stage_World,global.Stage_Number] &gt; global.Stage_Fire_Record[global.Stage_World,global.Stage_Number] ) { global.Stage_Fire_Record[global.Stage_World,global.Stage_Number] = global.Stage_Fire_Amount[global.Stage_World,global.Stage_Number]; }
     
-    if( global.Stage_Time_Record[global.Stage_Number] == -1 ) {
+    if( global.Stage_Time_Record[global.Stage_World,global.Stage_Number] == -1 ) {
     
-        global.Stage_Time_Record[global.Stage_Number] = global.Stage_Time[global.Stage_Number];
+        global.Stage_Time_Record[global.Stage_World,global.Stage_Number] = global.Stage_Time[global.Stage_World,global.Stage_Number];
     
-    } else if( global.Stage_Time[global.Stage_Number] &lt; global.Stage_Time_Record[global.Stage_Number] ) { global.Stage_Time_Record[global.Stage_Number] = global.Stage_Time[global.Stage_Number]; }
+    } else if( global.Stage_Time[global.Stage_World,global.Stage_Number] &lt; global.Stage_Time_Record[global.Stage_World,global.Stage_Number] ) { global.Stage_Time_Record[global.Stage_World,global.Stage_Number] = global.Stage_Time[global.Stage_World,global.Stage_Number]; }
     
-    if( global.Stage_Number + 1 &lt; array_length_1d( global.Stage_Room ) ) {
+    if( global.Stage_Number + 1 &lt; array_length_2d( global.Stage_Room, global.Stage_World ) ) {
     
-        global.Stage_Unlock[ global.Stage_Number + 1 ] = true;
+        global.Stage_Unlock[ global.Stage_World, global.Stage_Number + 1 ] = true;
     
     }
     

@@ -25,9 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( global.Stage_Page == 0 ) { sprite_index = Sprite_System_Page_1 };
-if( global.Stage_Page == 1 ) { sprite_index = Sprite_System_Page_2 };
-if( global.Stage_Page == 2 ) { sprite_index = Sprite_System_Page_3 };
+            <string>if( global.World == 0 ) {
+
+    if( global.Stage_Page[global.World] == 0 ) { sprite_index = Sprite_System_Page_1 };
+    if( global.Stage_Page[global.World] == 1 ) { sprite_index = Sprite_System_Page_2 };
+    if( global.Stage_Page[global.World] == 2 ) { sprite_index = Sprite_System_Page_3 };
+
+}
+if( global.World == 1 ) {
+
+    if( global.Stage_Page[global.World] == 0 ) { sprite_index = Sprite_System_World1_1 };
+
+}
+
 </string>
           </argument>
         </arguments>
@@ -56,7 +66,7 @@ draw_set_valign( fa_middle );
 draw_set_alpha( 1 );
 draw_self();
 draw_set_alpha( 0.5 );
-draw_text_transformed( x, y + sprite_height, "Page " + string( global.Stage_Page + 1 ), 1, 1, 0 );
+draw_text_transformed( x, y + sprite_height, "Page " + string( global.Stage_Page[global.World] + 1 ), 1, 1, 0 );
 </string>
           </argument>
         </arguments>

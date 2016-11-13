@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( global.Stage_Last + 1 &gt; array_length_1d( global.Stage_Room ) - 1 ) { instance_destroy(); }
+            <string>if( global.Stage_Last[global.World] + 1 &gt; array_length_2d( global.Stage_Room, global.World ) - 1 ) { instance_destroy(); }
 </string>
           </argument>
         </arguments>
@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto( global.Stage_Room[global.Stage_Last + 1] );
+            <string>room_goto( global.Stage_Room[ global.World, global.Stage_Last[global.World] + 1] );
 </string>
           </argument>
         </arguments>

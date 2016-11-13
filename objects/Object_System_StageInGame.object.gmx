@@ -25,13 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( global.Stage_Death[ global.Stage_Last ] &gt; 0 || global.Stage_Completion[ global.Stage_Last ] &gt; 0 ) { image_alpha = 1; }
-
-Width = view_wview[0] / sprite_width;
+            <string>Width = view_wview[0] / sprite_width;
 Height = 240 / sprite_height;
 
 Background = Sprite_Background_Web;
-//Background = choose( Sprite_Background_Web, Sprite_Background_Web1, Sprite_Background_Web2, Sprite_Background_Web3 );
+if( global.World == 1 ) { Background = Sprite_Background_1; }
+
+instance_create( x, y, Object_System_Subtitle );
 </string>
           </argument>
         </arguments>
@@ -80,9 +80,9 @@ Background = Sprite_Background_Web;
             <string>draw_set_font( Font_24 );
 draw_set_halign( fa_center );
 draw_set_valign( fa_middle );
+draw_set_alpha( 1 );
 draw_sprite_ext( Background, -1, view_xview[0] + ( view_wview[0] / 2 ), view_yview[0] + ( view_hview[0] / 2 ), view_wview[0] / sprite_get_width( Background ), view_hview[0] / sprite_get_height( Background ), -view_angle[0], c_white, 1 ); 
-draw_sprite_ext( Sprite_UI_Bar, -1, view_xview[0] + ( view_wview[0] / 2 ), view_yview[0] + ( view_hview[0] / 2 ), Width, Height, -view_angle[0], c_dkgray, image_alpha );
-draw_text_transformed_colour( view_xview[0] + ( view_wview[0] / 2 ), view_yview[0] + ( view_hview[0] / 2 ), global.Stage_Name, 2, 2, -view_angle[0], c_white, c_white, c_white, c_white, image_alpha );
+
 </string>
           </argument>
         </arguments>

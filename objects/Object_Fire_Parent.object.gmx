@@ -56,7 +56,7 @@ Fire_Health_Max = 0;
     Fire_Health--;
     if( Fire_Health &lt;= 0 ) { 
     
-        global.Stage_Fire_Amount[global.Stage_Number]++;
+        global.Stage_Fire_Amount[global.Stage_World,global.Stage_Number]++;
         instance_destroy();
     
     }   
@@ -68,7 +68,7 @@ Fire_Health_Max = 0;
     Fire_Health--;
     if( Fire_Health &lt;= 0 ) {
     
-        global.Stage_Fire_Amount[global.Stage_Number]++;
+        global.Stage_Fire_Amount[global.Stage_World,global.Stage_Number]++;
         instance_destroy();
     
     }

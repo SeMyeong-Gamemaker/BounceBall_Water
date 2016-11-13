@@ -94,12 +94,8 @@
       <sprite>sprites\Sprite_UI_Bar</sprite>
     </sprites>
     <sprites name="System">
+      <sprite>sprites\Sprite_System_WideButton</sprite>
       <sprite>sprites\Sprite_System_BigButton</sprite>
-      <sprites name="Page">
-        <sprite>sprites\Sprite_System_Page_1</sprite>
-        <sprite>sprites\Sprite_System_Page_2</sprite>
-        <sprite>sprites\Sprite_System_Page_3</sprite>
-      </sprites>
       <sprites name="StageButton">
         <sprite>sprites\Sprite_System_StageButton</sprite>
         <sprite>sprites\Sprite_System_StageButton_Next</sprite>
@@ -118,10 +114,19 @@
       </sprites>
       <sprites name="World">
         <sprite>sprites\Sprite_System_World_Tutorial</sprite>
+        <sprites name="Tutorial">
+          <sprite>sprites\Sprite_System_Page_1</sprite>
+          <sprite>sprites\Sprite_System_Page_2</sprite>
+          <sprite>sprites\Sprite_System_Page_3</sprite>
+        </sprites>
+        <sprites name="World 1">
+          <sprite>sprites\Sprite_System_World1_1</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Background">
       <sprite>sprites\Sprite_Background_Web</sprite>
+      <sprite>sprites\Sprite_Background_1</sprite>
     </sprites>
     <sprites name="Effect">
       <sprite>sprites\Sprite_Effect_Drop</sprite>
@@ -211,10 +216,12 @@
     <objects name="System">
       <object>objects\Object_System_Page</object>
       <object>objects\Object_System_Play</object>
+      <object>objects\Object_System_Back</object>
       <object>objects\Object_System_Select</object>
       <object>objects\Object_System_Next</object>
       <objects name="Stage">
         <object>objects\Object_System_Stage</object>
+        <object>objects\Object_System_Subtitle</object>
         <object>objects\Object_System_StageInGame</object>
         <object>objects\Object_System_StageButton</object>
         <object>objects\Object_System_StageSelect</object>
@@ -229,6 +236,7 @@
       </objects>
       <objects name="World">
         <object>objects\Object_System_World_Tutorial</object>
+        <object>objects\Object_System_World_1</object>
       </objects>
     </objects>
     <objects name="Effect">
@@ -260,8 +268,8 @@
         <room>rooms\Room_15</room>
       </rooms>
       <rooms name="Page 2">
-        <room>rooms\Room_17</room>
         <room>rooms\Room_16</room>
+        <room>rooms\Room_17</room>
         <room>rooms\Room_18</room>
         <room>rooms\Room_19</room>
         <room>rooms\Room_20</room>
@@ -284,6 +292,9 @@
         <room>rooms\Room_35</room>
         <room>rooms\Room_36</room>
       </rooms>
+    </rooms>
+    <rooms name="World 1">
+      <room>rooms\Room_1_1</room>
     </rooms>
   </rooms>
   <help>

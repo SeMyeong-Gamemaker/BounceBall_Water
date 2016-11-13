@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( global.Stage_Page != 0 ) {
+            <string>if( global.Stage_Page[global.World] != 0 ) {
 
-    global.Stage_Page--;
+    global.Stage_Page[global.World]--;
     
     with( Object_System_StageButton ) { instance_destroy(); }
     with( Object_System_StageSelect ) { instance_destroy(); }
@@ -59,7 +59,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( global.Stage_Page != 0 ) {
+            <string>if( global.Stage_Page[global.World] != 0 ) {
 
     draw_sprite_ext( sprite_index, -1, x, y, 1, 1, 180, c_white, 1 );
 

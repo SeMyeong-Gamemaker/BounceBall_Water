@@ -25,69 +25,86 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.Stage_Last = 0;
+            <string>global.Stage_Room[0,0] = 0;
+global.Stage_Room[0,1] = Room_1;
+global.Stage_Room[0,2] = Room_2;
+global.Stage_Room[0,3] = Room_3;
+global.Stage_Room[0,4] = Room_4;
+global.Stage_Room[0,5] = Room_5;
+global.Stage_Room[0,6] = Room_6;
+global.Stage_Room[0,7] = Room_7;
+global.Stage_Room[0,8] = Room_8;
+global.Stage_Room[0,9] = Room_9;
+global.Stage_Room[0,10] = Room_10;
+global.Stage_Room[0,11] = Room_11;
+global.Stage_Room[0,12] = Room_12;
+global.Stage_Room[0,13] = Room_13;
+global.Stage_Room[0,14] = Room_14;
+global.Stage_Room[0,15] = Room_15;
+global.Stage_Room[0,16] = Room_16;
+global.Stage_Room[0,17] = Room_17;
+global.Stage_Room[0,18] = Room_18;
+global.Stage_Room[0,19] = Room_19;
+global.Stage_Room[0,20] = Room_20;
+global.Stage_Room[0,21] = Room_21;
+global.Stage_Room[0,22] = Room_22;
+global.Stage_Room[0,23] = Room_23;
+global.Stage_Room[0,24] = Room_24;
+global.Stage_Room[0,25] = Room_25;
+global.Stage_Room[0,26] = Room_26;
+global.Stage_Room[0,27] = Room_27;
+global.Stage_Room[0,28] = Room_28;
+global.Stage_Room[0,29] = Room_29;
+global.Stage_Room[0,30] = Room_30;
+global.Stage_Room[0,31] = Room_31;
+global.Stage_Room[0,32] = Room_32;
+global.Stage_Room[0,33] = Room_33;
+global.Stage_Room[0,34] = Room_34;
+global.Stage_Room[0,35] = Room_35;
+global.Stage_Room[0,36] = Room_36;
+//global.Stage_Room[0,37] = Room_37;
+//global.Stage_Room[0,38] = Room_38;
+//global.Stage_Room[0,39] = Room_39;
+//global.Stage_Room[0,40] = Room_40;
+//global.Stage_Room[0,41] = Room_41;
+//global.Stage_Room[0,42] = Room_42;
+//global.Stage_Room[0,43] = Room_43;
+//global.Stage_Room[0,44] = Room_44;
+//global.Stage_Room[0,45] = Room_45;
 
-global.Stage_Room[0] = 0;
-global.Stage_Room[1] = Room_1;
-global.Stage_Room[2] = Room_2;
-global.Stage_Room[3] = Room_3;
-global.Stage_Room[4] = Room_4;
-global.Stage_Room[5] = Room_5;
-global.Stage_Room[6] = Room_6;
-global.Stage_Room[7] = Room_7;
-global.Stage_Room[8] = Room_8;
-global.Stage_Room[9] = Room_9;
-global.Stage_Room[10] = Room_10;
-global.Stage_Room[11] = Room_11;
-global.Stage_Room[12] = Room_12;
-global.Stage_Room[13] = Room_13;
-global.Stage_Room[14] = Room_14;
-global.Stage_Room[15] = Room_15;
-global.Stage_Room[16] = Room_16;
-global.Stage_Room[17] = Room_17;
-global.Stage_Room[18] = Room_18;
-global.Stage_Room[19] = Room_19;
-global.Stage_Room[20] = Room_20;
-global.Stage_Room[21] = Room_21;
-global.Stage_Room[22] = Room_22;
-global.Stage_Room[23] = Room_23;
-global.Stage_Room[24] = Room_24;
-global.Stage_Room[25] = Room_25;
-global.Stage_Room[26] = Room_26;
-global.Stage_Room[27] = Room_27;
-global.Stage_Room[28] = Room_28;
-global.Stage_Room[29] = Room_29;
-global.Stage_Room[30] = Room_30;
-global.Stage_Room[31] = Room_31;
-global.Stage_Room[32] = Room_32;
-global.Stage_Room[33] = Room_33;
-global.Stage_Room[34] = Room_34;
-global.Stage_Room[35] = Room_35;
-global.Stage_Room[36] = Room_36;
+global.Stage_Room[1,0] = 0;
+global.Stage_Room[1,1] = Room_1_1;
 
-for( i = 0; i &lt; array_length_1d( global.Stage_Room ); i++ ) {
+global.World = 0;
 
-    global.Stage_Death[i] = 0;
-    global.Stage_Death_Record[i] = -1;
+for( j = 0; j &lt; array_height_2d( global.Stage_Room ); j++ ) {
+
+    global.Stage_Unlock[j,1] = true;
+    global.Stage_Page_Max[j] = ( array_length_2d( global.Stage_Room, j ) - 2 ) div 15;
+    global.Stage_Page[j] = 0;
+    global.Stage_Last[j] = 0;
+
+    for( i = 0; i &lt; array_length_2d( global.Stage_Room, j ); i++ ) {
+
+        global.Stage_Death[j,i] = 0;
+        global.Stage_Death_Record[j,i] = -1;
+        
+        global.Stage_Fire[j,i] = 0;
+        global.Stage_Fire_Amount[j,i] = 0;
+        global.Stage_Fire_Record[j,i] = -1;
     
-    global.Stage_Fire[i] = 0;
-    global.Stage_Fire_Amount[i] = 0;
-    global.Stage_Fire_Record[i] = -1;
+        global.Stage_Time[j,i] = 0;
+        global.Stage_Time_Record[j,i] = -1;
     
-    global.Stage_Time[i] = 0;
-    global.Stage_Time_Record[i] = -1;
+        global.Stage_Completion[j,i] = 0;
+        global.Stage_Completion_Record[j,i] = -1;
     
-    global.Stage_Completion[i] = 0;
-    global.Stage_Completion_Record[i] = -1;
-    
-    global.Stage_Unlock[i] = true;
+        global.Stage_Unlock[j,i] = true;
+
+    }
 
 }
 
-global.Stage_Unlock[1] = true;
-
-global.Stage_Page = 0;
-global.Stage_Page_Max = ( array_length_1d( global.Stage_Room ) - 2 ) div 15;
 </string>
           </argument>
         </arguments>
