@@ -30,7 +30,7 @@ Unfinished = false;
 switch( Object_System_StageSelect.i ) {
 
     case 1 : case 2 : case 6 : case 7 : case 11 : case 12 : case 16 : case 21 : case 26 : case 31 : case 32 : case 36 : Tutorial = true; break;
-    case 28 : case 29 : case 30 : Unfinished = true; break;
+    case 30 : Unfinished = true; break;
             
 }
 </string>
