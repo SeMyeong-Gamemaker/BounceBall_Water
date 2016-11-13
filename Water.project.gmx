@@ -20,6 +20,7 @@
     </sprites>
     <sprites name="Wall">
       <sprite>sprites\Sprite_Wall_64</sprite>
+      <sprite>sprites\Sprite_Wall_Bridge_64</sprite>
       <sprite>sprites\Sprite_Cooler_64</sprite>
       <sprite>sprites\Sprite_Heater_64</sprite>
       <sprite>sprites\Sprite_Ice_64</sprite>
@@ -159,6 +160,8 @@
       <objects name="Wall">
         <object>objects\Object_Wall_Parent</object>
         <object>objects\Object_Wall_64</object>
+        <object>objects\Object_Wall_Bridge_Parent</object>
+        <object>objects\Object_Wall_Bridge_64</object>
       </objects>
       <objects name="Fire">
         <object>objects\Object_Fire_Parent</object>
@@ -277,6 +280,9 @@
         <room>rooms\Room_31</room>
         <room>rooms\Room_32</room>
         <room>rooms\Room_33</room>
+        <room>rooms\Room_34</room>
+        <room>rooms\Room_35</room>
+        <room>rooms\Room_36</room>
       </rooms>
     </rooms>
   </rooms>
