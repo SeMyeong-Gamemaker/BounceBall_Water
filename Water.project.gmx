@@ -64,6 +64,10 @@
         <sprite>sprites\Sprite_Drain_Up_64</sprite>
         <sprite>sprites\Sprite_Drain_Down_64</sprite>
       </sprites>
+      <sprites name="Fan">
+        <sprite>sprites\Sprite_Fan_64</sprite>
+        <sprite>sprites\Sprite_Fan_Wind_64</sprite>
+      </sprites>
     </sprites>
     <sprites name="UI">
       <sprite>sprites\Sprite_UI_Bar</sprite>
@@ -73,6 +77,7 @@
       <sprites name="Page">
         <sprite>sprites\Sprite_System_Page_1</sprite>
         <sprite>sprites\Sprite_System_Page_2</sprite>
+        <sprite>sprites\Sprite_System_Page_3</sprite>
       </sprites>
       <sprites name="StageButton">
         <sprite>sprites\Sprite_System_StageButton</sprite>
@@ -171,6 +176,11 @@
         <object>objects\Object_Moving_Vertical_64</object>
       </objects>
       <object>objects\Object_Pipe_64</object>
+      <objects name="Fan">
+        <object>objects\Object_Fan_Parent</object>
+        <object>objects\Object_Fan_64</object>
+        <object>objects\Object_Fan_Wind_64</object>
+      </objects>
     </objects>
     <objects name="System">
       <object>objects\Object_System_Page</object>
@@ -231,6 +241,8 @@
         <room>rooms\Room_21</room>
         <room>rooms\Room_22</room>
         <room>rooms\Room_23</room>
+        <room>rooms\Room_24</room>
+        <room>rooms\Room_25</room>
       </rooms>
     </rooms>
   </rooms>
