@@ -108,6 +108,8 @@ randomize();</code>
     <instance objName="Object_Filter_Inside_64" x="1472" y="512" name="inst_AF2BF56B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Filter_Inside_64" x="1600" y="512" name="inst_FBA240DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Filter_Inside_64" x="1088" y="512" name="inst_F21EC672" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Fire_64" x="640" y="544" name="inst_CEBB6E0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Fire_64" x="704" y="544" name="inst_2B755240" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

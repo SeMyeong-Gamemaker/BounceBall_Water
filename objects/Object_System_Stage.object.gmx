@@ -53,6 +53,13 @@ global.Stage_Room[22] = Room_22;
 global.Stage_Room[23] = Room_23;
 global.Stage_Room[24] = Room_24;
 global.Stage_Room[25] = Room_25;
+global.Stage_Room[26] = Room_26;
+global.Stage_Room[27] = Room_27;
+global.Stage_Room[28] = Room_28;
+global.Stage_Room[29] = Room_29;
+global.Stage_Room[30] = Room_30;
+global.Stage_Room[31] = Room_31;
+global.Stage_Room[32] = Room_32;
 
 for( i = 0; i &lt; array_length_1d( global.Stage_Room ); i++ ) {
 

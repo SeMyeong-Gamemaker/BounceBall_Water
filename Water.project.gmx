@@ -55,6 +55,26 @@
       <sprites name="Broken">
         <sprite>sprites\Sprite_Wall_Broken_64</sprite>
         <sprite>sprites\Sprite_Wall_Broken_64_Mask</sprite>
+        <sprite>sprites\Sprite_Wall_Broken_Bridge_64</sprite>
+        <sprite>sprites\Sprite_Wall_Broken_Bridge_64_Mask</sprite>
+        <sprites name="Debri">
+          <sprite>sprites\Sprite_Wall_Debri_64_1</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_2</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_3</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_4</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_5</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_6</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_7</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_8</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_9</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_10</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_11</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_12</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_Bridge_64_1</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_Bridge_64_2</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_Bridge_64_3</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_Bridge_64_4</sprite>
+        </sprites>
       </sprites>
       <sprites name="Moving">
         <sprite>sprites\Sprite_Moving_Horizontal_64</sprite>
@@ -93,6 +113,7 @@
         <sprite>sprites\Sprite_Icon_Death_Perfect</sprite>
         <sprite>sprites\Sprite_Icon_Fire_Perfect</sprite>
         <sprite>sprites\Sprite_Icon_Tutorial</sprite>
+        <sprite>sprites\Sprite_Icon_Unfinished</sprite>
       </sprites>
       <sprites name="World">
         <sprite>sprites\Sprite_System_World_Tutorial</sprite>
@@ -164,6 +185,8 @@
       <objects name="Broken">
         <object>objects\Object_Wall_Broken_Parent</object>
         <object>objects\Object_Wall_Broken_64</object>
+        <object>objects\Object_Wall_Broken_Bridge_Parent</object>
+        <object>objects\Object_Wall_Broken_Bridge_64</object>
       </objects>
       <objects name="Drain">
         <object>objects\Object_Drain_Parent</object>
@@ -207,6 +230,7 @@
     </objects>
     <objects name="Effect">
       <object>objects\Object_Effect_Drop</object>
+      <object>objects\Object_Effect_Debri</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -243,6 +267,15 @@
         <room>rooms\Room_23</room>
         <room>rooms\Room_24</room>
         <room>rooms\Room_25</room>
+        <room>rooms\Room_26</room>
+        <room>rooms\Room_27</room>
+        <room>rooms\Room_28</room>
+        <room>rooms\Room_29</room>
+        <room>rooms\Room_30</room>
+      </rooms>
+      <rooms name="Page 3">
+        <room>rooms\Room_31</room>
+        <room>rooms\Room_32</room>
       </rooms>
     </rooms>
   </rooms>

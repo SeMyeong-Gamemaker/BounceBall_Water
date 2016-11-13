@@ -26,9 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>Tutorial = false;
+Unfinished = false;
 switch( Object_System_StageSelect.i ) {
 
-    case 1 : case 2 : case 6 : case 7 : case 11 : case 12 : case 16 : case 21 : Tutorial = true; break;
+    case 1 : case 2 : case 6 : case 7 : case 11 : case 12 : case 16 : case 21 : case 26 : case 31 : case 32 : Tutorial = true; break;
+    case 28 : case 29 : case 30 : Unfinished = true; break;
             
 }
 </string>
@@ -90,6 +92,7 @@ if( global.Stage_Unlock[ Stage_Number ] == true ) {
     
     draw_set_alpha( 0.5 );
     if( Tutorial == true ) { draw_sprite( Sprite_Icon_Tutorial, -1, x, y + 8 ); }
+    if( Unfinished == true ) { draw_sprite( Sprite_Icon_Unfinished, -1, x, y + 8 ); }
     draw_text_transformed( x, y, string( Stage_Number ) + "##", 1, 1, 0 );
     if( global.Stage_Completion_Record[ Stage_Number ] &gt; 0 ) { draw_sprite( Sprite_System_StageButton_Completion, global.Stage_Completion_Record[ Stage_Number ] * 100 div 20 - 1, x, y + 32 ); }
     if( global.Stage_Fire_Record[ Stage_Number ] == global.Stage_Fire[ Stage_Number ] ) { draw_sprite( Sprite_Icon_Fire_Perfect, -1, x - ( sprite_width / 2 ) + 16, y - ( sprite_height / 2 ) + 16 ); }
