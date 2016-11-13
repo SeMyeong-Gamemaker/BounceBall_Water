@@ -20,7 +20,7 @@
     </sprites>
     <sprites name="Wall">
       <sprite>sprites\Sprite_Wall_64</sprite>
-      <sprite>sprites\Sprite_Wall_Broken_64</sprite>
+      <sprite>sprites\Sprite_Wall_Bridge_64</sprite>
       <sprite>sprites\Sprite_Cooler_64</sprite>
       <sprite>sprites\Sprite_Heater_64</sprite>
       <sprite>sprites\Sprite_Ice_64</sprite>
@@ -33,10 +33,12 @@
       <sprites name="Filter">
         <sprite>sprites\Sprite_Filter_64</sprite>
         <sprite>sprites\Sprite_Filter_Polluted_64</sprite>
+        <sprite>sprites\Sprite_Filter_64_Mask</sprite>
       </sprites>
       <sprites name="Purifier">
         <sprite>sprites\Sprite_Purifier_64</sprite>
         <sprite>sprites\Sprite_Purifier_Polluted_64</sprite>
+        <sprite>sprites\Sprite_Purifier_64_Mask</sprite>
       </sprites>
       <sprites name="Pipe">
         <sprite>sprites\Sprite_Pipe_64</sprite>
@@ -46,9 +48,46 @@
       <sprites name="Sponge">
         <sprite>sprites\Sprite_Sponge_64</sprite>
         <sprite>sprites\Sprite_Sponge_Wet_64</sprite>
+        <sprite>sprites\Sprite_Sponge_64_Mask</sprite>
       </sprites>
       <sprites name="Fire">
         <sprite>sprites\Sprite_Fire_64</sprite>
+      </sprites>
+      <sprites name="Broken">
+        <sprite>sprites\Sprite_Wall_Broken_64</sprite>
+        <sprite>sprites\Sprite_Wall_Broken_64_Mask</sprite>
+        <sprite>sprites\Sprite_Wall_Broken_Bridge_64</sprite>
+        <sprite>sprites\Sprite_Wall_Broken_Bridge_64_Mask</sprite>
+        <sprites name="Debri">
+          <sprite>sprites\Sprite_Wall_Debri_64_1</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_2</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_3</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_4</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_5</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_6</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_7</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_8</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_9</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_10</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_11</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_64_12</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_Bridge_64_1</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_Bridge_64_2</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_Bridge_64_3</sprite>
+          <sprite>sprites\Sprite_Wall_Debri_Bridge_64_4</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Moving">
+        <sprite>sprites\Sprite_Moving_Horizontal_64</sprite>
+        <sprite>sprites\Sprite_Moving_Vertical_64</sprite>
+      </sprites>
+      <sprites name="Drain">
+        <sprite>sprites\Sprite_Drain_Up_64</sprite>
+        <sprite>sprites\Sprite_Drain_Down_64</sprite>
+      </sprites>
+      <sprites name="Fan">
+        <sprite>sprites\Sprite_Fan_64</sprite>
+        <sprite>sprites\Sprite_Fan_Wind_64</sprite>
       </sprites>
     </sprites>
     <sprites name="UI">
@@ -59,6 +98,7 @@
       <sprites name="Page">
         <sprite>sprites\Sprite_System_Page_1</sprite>
         <sprite>sprites\Sprite_System_Page_2</sprite>
+        <sprite>sprites\Sprite_System_Page_3</sprite>
       </sprites>
       <sprites name="StageButton">
         <sprite>sprites\Sprite_System_StageButton</sprite>
@@ -74,6 +114,7 @@
         <sprite>sprites\Sprite_Icon_Death_Perfect</sprite>
         <sprite>sprites\Sprite_Icon_Fire_Perfect</sprite>
         <sprite>sprites\Sprite_Icon_Tutorial</sprite>
+        <sprite>sprites\Sprite_Icon_Unfinished</sprite>
       </sprites>
       <sprites name="World">
         <sprite>sprites\Sprite_System_World_Tutorial</sprite>
@@ -119,6 +160,8 @@
       <objects name="Wall">
         <object>objects\Object_Wall_Parent</object>
         <object>objects\Object_Wall_64</object>
+        <object>objects\Object_Wall_Bridge_Parent</object>
+        <object>objects\Object_Wall_Bridge_64</object>
       </objects>
       <objects name="Fire">
         <object>objects\Object_Fire_Parent</object>
@@ -142,7 +185,28 @@
         <object>objects\Object_Sponge_Inside_Parent</object>
         <object>objects\Object_Sponge_Inside_64</object>
       </objects>
+      <objects name="Broken">
+        <object>objects\Object_Wall_Broken_Parent</object>
+        <object>objects\Object_Wall_Broken_64</object>
+        <object>objects\Object_Wall_Broken_Bridge_Parent</object>
+        <object>objects\Object_Wall_Broken_Bridge_64</object>
+      </objects>
+      <objects name="Drain">
+        <object>objects\Object_Drain_Parent</object>
+        <object>objects\Object_Drain_Up_64</object>
+        <object>objects\Object_Drain_Down_64</object>
+      </objects>
+      <objects name="Moving">
+        <object>objects\Object_Moving_Parent</object>
+        <object>objects\Object_Moving_Horizontal_64</object>
+        <object>objects\Object_Moving_Vertical_64</object>
+      </objects>
       <object>objects\Object_Pipe_64</object>
+      <objects name="Fan">
+        <object>objects\Object_Fan_Parent</object>
+        <object>objects\Object_Fan_64</object>
+        <object>objects\Object_Fan_Wind_64</object>
+      </objects>
     </objects>
     <objects name="System">
       <object>objects\Object_System_Page</object>
@@ -169,6 +233,7 @@
     </objects>
     <objects name="Effect">
       <object>objects\Object_Effect_Drop</object>
+      <object>objects\Object_Effect_Debri</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -176,7 +241,7 @@
     <room>rooms\Room_World</room>
     <room>rooms\Room_Stage</room>
     <room>rooms\Room_Complete</room>
-    <rooms name="World 1">
+    <rooms name="Tutorial World">
       <rooms name="Page 1">
         <room>rooms\Room_1</room>
         <room>rooms\Room_2</room>
@@ -195,12 +260,29 @@
         <room>rooms\Room_15</room>
       </rooms>
       <rooms name="Page 2">
-        <room>rooms\Room_16</room>
         <room>rooms\Room_17</room>
+        <room>rooms\Room_16</room>
         <room>rooms\Room_18</room>
         <room>rooms\Room_19</room>
         <room>rooms\Room_20</room>
         <room>rooms\Room_21</room>
+        <room>rooms\Room_22</room>
+        <room>rooms\Room_23</room>
+        <room>rooms\Room_24</room>
+        <room>rooms\Room_25</room>
+        <room>rooms\Room_26</room>
+        <room>rooms\Room_27</room>
+        <room>rooms\Room_28</room>
+        <room>rooms\Room_29</room>
+        <room>rooms\Room_30</room>
+      </rooms>
+      <rooms name="Page 3">
+        <room>rooms\Room_31</room>
+        <room>rooms\Room_32</room>
+        <room>rooms\Room_33</room>
+        <room>rooms\Room_34</room>
+        <room>rooms\Room_35</room>
+        <room>rooms\Room_36</room>
       </rooms>
     </rooms>
   </rooms>

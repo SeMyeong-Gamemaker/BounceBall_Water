@@ -49,8 +49,8 @@ Sponge_Max = 50;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext( Sprite_Sponge_64, -1, x, y, 1, 1, 0, c_gray, 1 );
-draw_sprite_ext( Sprite_Sponge_Wet_64, -1, x, y, 1, 1, 0, c_gray, 1 - ( Sponge / Sponge_Max ) );
+            <string>draw_sprite_ext( Sprite_Sponge_64, -1, x, y, 1, 1, 0, c_ltgray, 1 );
+draw_sprite_ext( Sprite_Sponge_Wet_64, -1, x, y, 1, 1, 0, c_ltgray, 1 - ( Sponge / Sponge_Max ) );
 </string>
           </argument>
         </arguments>

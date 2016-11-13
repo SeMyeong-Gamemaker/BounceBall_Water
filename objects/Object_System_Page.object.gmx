@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>if( global.Stage_Page == 0 ) { sprite_index = Sprite_System_Page_1 };
 if( global.Stage_Page == 1 ) { sprite_index = Sprite_System_Page_2 };
+if( global.Stage_Page == 2 ) { sprite_index = Sprite_System_Page_3 };
 </string>
           </argument>
         </arguments>

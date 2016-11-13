@@ -49,10 +49,23 @@ Water_Amount_Max = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( other.Water_Amount &lt; Water_Amount &amp;&amp; Water_Amount &gt; 0 ) {
+            <string>if( other.y = y ) {
 
-    Water_Amount--;
-    other.Water_Amount++;
+    if( other.Water_Amount &lt; Water_Amount &amp;&amp; Water_Amount &gt; 0 ) {
+
+        Water_Amount--;
+        other.Water_Amount++;
+
+    }
+
+} else if( other.y &gt; y ) { 
+
+    if( other.Water_Amount &lt; other.Water_Amount_Max &amp;&amp; Water_Amount &gt; 0 ) {
+    
+        Water_Amount--;
+        other.Water_Amount++;
+    
+    }
 
 }
 
@@ -107,7 +120,7 @@ Water_Amount_Max = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext( sprite_index, -1, x, y + sprite_height - ( Water_Amount / Water_Amount_Max * sprite_height ), 1, 1, 0, c_white, 1 );
+            <string>draw_sprite_ext( sprite_index, -1, x, y, 1, ( Water_Amount / Water_Amount_Max ), 0, c_white, 1 );
 </string>
           </argument>
         </arguments>
