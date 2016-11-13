@@ -3,7 +3,7 @@
   <spriteName>Sprite_Wall_Broken_Bridge_64</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>-1000</depth>
+  <depth>-999</depth>
   <persistent>0</persistent>
   <parentName>Object_Wall_Broken_Bridge_Parent</parentName>
   <maskName>Sprite_Wall_Broken_Bridge_64_Mask</maskName>
@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Shadow = true;
-Health = 1;
+            <string>Health = 1;
 Check = false;
 Destroyed = false;
 alarm[0] = 1;

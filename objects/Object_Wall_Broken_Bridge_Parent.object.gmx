@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>-1000</depth>
+  <depth>-999</depth>
   <persistent>0</persistent>
   <parentName>Object_Wall_Parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Shadow = true;
-Health = 1;
+            <string>Health = 1;
 Check = false;
 Destroyed = false;
 alarm[0] = 1;
@@ -104,7 +103,7 @@ Check = true;
     if( ( place_free( x + 1, y, ) || place_free( x - 1, y, ) ) &amp;&amp; Destroyed == false ) {
     
         Destroyed = true;
-        alarm[1] = 12;
+        alarm[1] = 15;
     
     }
 
@@ -131,7 +130,7 @@ Check = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( Shadow == true ) { draw_sprite_ext( sprite_index, -1, x, y + 8, 1, 1, 0, c_dkgray, 1 ); }
+            <string>draw_sprite_ext( sprite_index, -1, x, y + 8, 1, 1, 0, c_dkgray, 1 );
 draw_self();
 </string>
           </argument>

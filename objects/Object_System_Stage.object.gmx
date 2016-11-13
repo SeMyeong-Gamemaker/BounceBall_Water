@@ -60,6 +60,7 @@ global.Stage_Room[29] = Room_29;
 global.Stage_Room[30] = Room_30;
 global.Stage_Room[31] = Room_31;
 global.Stage_Room[32] = Room_32;
+global.Stage_Room[33] = Room_33;
 
 for( i = 0; i &lt; array_length_1d( global.Stage_Room ); i++ ) {
 
