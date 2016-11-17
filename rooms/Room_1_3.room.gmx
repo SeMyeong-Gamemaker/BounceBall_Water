@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.Stage_Name = "1-4"
+  <code>global.Stage_Name = "1-3"
 global.Stage_World = 1;
 global.Stage_Number = 3;
 global.Stage_Last[global.Stage_World] = 3;
