@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( global.Stage_Death[ global.World, global.Stage_Last[global.World] ] &gt; 0 || global.Stage_Completion_Record[ global.World, global.Stage_Last[global.World] ] &gt; 0 ) { instance_destroy(); }
-else { image_alpha = 1; }
+            <string>//if( global.Stage_Death[ global.World, global.Stage_Last[global.World] ] &gt; 0 ) { instance_destroy(); }
+//else { image_alpha = 1; }
 
 Width = view_wview[0] / sprite_width;
 Height = 240 / sprite_height;
