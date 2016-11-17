@@ -29,7 +29,16 @@
 Height = 240 / sprite_height;
 
 Background = Sprite_Background_Web;
-if( global.World == 1 ) { Background = Sprite_Background_1; }
+if( global.World == 1 ) { 
+
+    switch( global.Stage_Page[global.World] ) {
+    
+        case 0 : Background = Sprite_Background_1; break;
+        case 1 : Background = Sprite_Background_2; break;
+
+    }
+    
+}
 
 instance_create( x, y, Object_System_Subtitle );
 </string>
