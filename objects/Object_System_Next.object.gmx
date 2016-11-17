@@ -48,7 +48,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto( global.Stage_Room[ global.World, global.Stage_Last[global.World] + 1] );
+            <string>if( global.Stage_Last[global.World] + 1 &gt; 15 * ( global.Stage_Page[global.World] + 1 ) ) {
+
+    global.Stage_Page[global.World]++;
+
+}
+room_goto( global.Stage_Room[ global.World, global.Stage_Last[global.World] + 1] );
 </string>
           </argument>
         </arguments>

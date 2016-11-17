@@ -91,8 +91,10 @@
       <sprites name="Wall">
         <sprite>sprites\Sprite_Wall_64</sprite>
         <sprite>sprites\Sprite_Wall_Grass_Top_64</sprite>
+        <sprite>sprites\Sprite_Wall_Grass_Top_1_64</sprite>
         <sprite>sprites\Sprite_Wall_Grass_Mid_64</sprite>
         <sprite>sprites\Sprite_Wall_Grass_Bot_64</sprite>
+        <sprite>sprites\Sprite_Wall_Grass_Bot_1_64</sprite>
       </sprites>
     </sprites>
     <sprites name="UI">
