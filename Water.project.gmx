@@ -19,7 +19,6 @@
       </sprites>
     </sprites>
     <sprites name="Wall">
-      <sprite>sprites\Sprite_Wall_64</sprite>
       <sprite>sprites\Sprite_Wall_Bridge_64</sprite>
       <sprite>sprites\Sprite_Cooler_64</sprite>
       <sprite>sprites\Sprite_Heater_64</sprite>
@@ -89,6 +88,12 @@
         <sprite>sprites\Sprite_Fan_64</sprite>
         <sprite>sprites\Sprite_Fan_Wind_64</sprite>
       </sprites>
+      <sprites name="Wall">
+        <sprite>sprites\Sprite_Wall_64</sprite>
+        <sprite>sprites\Sprite_Wall_Grass_Top_64</sprite>
+        <sprite>sprites\Sprite_Wall_Grass_Mid_64</sprite>
+        <sprite>sprites\Sprite_Wall_Grass_Bot_64</sprite>
+      </sprites>
     </sprites>
     <sprites name="UI">
       <sprite>sprites\Sprite_UI_Bar</sprite>
@@ -121,12 +126,14 @@
         </sprites>
         <sprites name="World 1">
           <sprite>sprites\Sprite_System_World1_1</sprite>
+          <sprite>sprites\Sprite_System_World1_2</sprite>
         </sprites>
       </sprites>
     </sprites>
     <sprites name="Background">
       <sprite>sprites\Sprite_Background_Web</sprite>
       <sprite>sprites\Sprite_Background_1</sprite>
+      <sprite>sprites\Sprite_Background_2</sprite>
     </sprites>
     <sprites name="Effect">
       <sprite>sprites\Sprite_Effect_Drop</sprite>
@@ -167,6 +174,11 @@
         <object>objects\Object_Wall_64</object>
         <object>objects\Object_Wall_Bridge_Parent</object>
         <object>objects\Object_Wall_Bridge_64</object>
+        <objects name="Grass">
+          <object>objects\Object_Wall_Grass_Top_64</object>
+          <object>objects\Object_Wall_Grass_Mid_64</object>
+          <object>objects\Object_Wall_Grass_Bot_64</object>
+        </objects>
       </objects>
       <objects name="Fire">
         <object>objects\Object_Fire_Parent</object>
@@ -294,7 +306,29 @@
       </rooms>
     </rooms>
     <rooms name="World 1">
-      <room>rooms\Room_1_1</room>
+      <rooms name="Page 1">
+        <room>rooms\Room_1_1</room>
+        <room>rooms\Room_1_2</room>
+        <room>rooms\Room_1_3</room>
+        <room>rooms\Room_1_4</room>
+        <room>rooms\Room_1_5</room>
+        <room>rooms\Room_1_6</room>
+        <room>rooms\Room_1_7</room>
+        <room>rooms\Room_1_8</room>
+        <room>rooms\Room_1_9</room>
+        <room>rooms\Room_1_10</room>
+        <room>rooms\Room_1_11</room>
+        <room>rooms\Room_1_12</room>
+        <room>rooms\Room_1_13</room>
+        <room>rooms\Room_1_14</room>
+        <room>rooms\Room_1_15</room>
+      </rooms>
+      <rooms name="Page 2">
+        <room>rooms\Room_1_16</room>
+        <room>rooms\Room_1_17</room>
+        <room>rooms\Room_1_18</room>
+        <room>rooms\Room_1_19</room>
+      </rooms>
     </rooms>
   </rooms>
   <help>

@@ -35,6 +35,7 @@
 if( global.World == 1 ) {
 
     if( global.Stage_Page[global.World] == 0 ) { sprite_index = Sprite_System_World1_1 };
+    if( global.Stage_Page[global.World] == 1 ) { sprite_index = Sprite_System_World1_2 };
 
 }
 
