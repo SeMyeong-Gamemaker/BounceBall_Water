@@ -99,7 +99,7 @@ if( image_alpha &lt;= 0 ) { instance_destroy(); }
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext( sprite_index, -1, x, y + 8, 1, 1, image_angle, c_dkgray, 1 * image_alpha );
+            <string>draw_sprite_ext( sprite_index, -1, x, y + 8, 1, 1, image_angle, c_dkgray, 0.5 * image_alpha );
 draw_sprite_ext( sprite_index, -1, x, y, 1, 1, image_angle, c_white, 1 * image_alpha );
 </string>
           </argument>

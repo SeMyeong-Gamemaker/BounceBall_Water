@@ -11,9 +11,10 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>global.Stage_Name = "깨진 블럭 1"
+global.Stage_World = 0;
 global.Stage_Number = 33;
-global.Stage_Last = 33;
-global.Stage_Fire[global.Stage_Number] = instance_number( Object_Fire_64 );
+global.Stage_Last[global.Stage_World] = 33;
+global.Stage_Fire[global.Stage_World,global.Stage_Number] = instance_number( Object_Fire_64 );
 randomize();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>

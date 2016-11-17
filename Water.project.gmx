@@ -19,7 +19,6 @@
       </sprites>
     </sprites>
     <sprites name="Wall">
-      <sprite>sprites\Sprite_Wall_64</sprite>
       <sprite>sprites\Sprite_Wall_Bridge_64</sprite>
       <sprite>sprites\Sprite_Cooler_64</sprite>
       <sprite>sprites\Sprite_Heater_64</sprite>
@@ -89,17 +88,21 @@
         <sprite>sprites\Sprite_Fan_64</sprite>
         <sprite>sprites\Sprite_Fan_Wind_64</sprite>
       </sprites>
+      <sprites name="Wall">
+        <sprite>sprites\Sprite_Wall_64</sprite>
+        <sprite>sprites\Sprite_Wall_Grass_Top_64</sprite>
+        <sprite>sprites\Sprite_Wall_Grass_Top_1_64</sprite>
+        <sprite>sprites\Sprite_Wall_Grass_Mid_64</sprite>
+        <sprite>sprites\Sprite_Wall_Grass_Bot_64</sprite>
+        <sprite>sprites\Sprite_Wall_Grass_Bot_1_64</sprite>
+      </sprites>
     </sprites>
     <sprites name="UI">
       <sprite>sprites\Sprite_UI_Bar</sprite>
     </sprites>
     <sprites name="System">
+      <sprite>sprites\Sprite_System_WideButton</sprite>
       <sprite>sprites\Sprite_System_BigButton</sprite>
-      <sprites name="Page">
-        <sprite>sprites\Sprite_System_Page_1</sprite>
-        <sprite>sprites\Sprite_System_Page_2</sprite>
-        <sprite>sprites\Sprite_System_Page_3</sprite>
-      </sprites>
       <sprites name="StageButton">
         <sprite>sprites\Sprite_System_StageButton</sprite>
         <sprite>sprites\Sprite_System_StageButton_Next</sprite>
@@ -118,10 +121,21 @@
       </sprites>
       <sprites name="World">
         <sprite>sprites\Sprite_System_World_Tutorial</sprite>
+        <sprites name="Tutorial">
+          <sprite>sprites\Sprite_System_Page_1</sprite>
+          <sprite>sprites\Sprite_System_Page_2</sprite>
+          <sprite>sprites\Sprite_System_Page_3</sprite>
+        </sprites>
+        <sprites name="World 1">
+          <sprite>sprites\Sprite_System_World1_1</sprite>
+          <sprite>sprites\Sprite_System_World1_2</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Background">
       <sprite>sprites\Sprite_Background_Web</sprite>
+      <sprite>sprites\Sprite_Background_1</sprite>
+      <sprite>sprites\Sprite_Background_2</sprite>
     </sprites>
     <sprites name="Effect">
       <sprite>sprites\Sprite_Effect_Drop</sprite>
@@ -162,6 +176,11 @@
         <object>objects\Object_Wall_64</object>
         <object>objects\Object_Wall_Bridge_Parent</object>
         <object>objects\Object_Wall_Bridge_64</object>
+        <objects name="Grass">
+          <object>objects\Object_Wall_Grass_Top_64</object>
+          <object>objects\Object_Wall_Grass_Mid_64</object>
+          <object>objects\Object_Wall_Grass_Bot_64</object>
+        </objects>
       </objects>
       <objects name="Fire">
         <object>objects\Object_Fire_Parent</object>
@@ -211,10 +230,12 @@
     <objects name="System">
       <object>objects\Object_System_Page</object>
       <object>objects\Object_System_Play</object>
+      <object>objects\Object_System_Back</object>
       <object>objects\Object_System_Select</object>
       <object>objects\Object_System_Next</object>
       <objects name="Stage">
         <object>objects\Object_System_Stage</object>
+        <object>objects\Object_System_Subtitle</object>
         <object>objects\Object_System_StageInGame</object>
         <object>objects\Object_System_StageButton</object>
         <object>objects\Object_System_StageSelect</object>
@@ -229,6 +250,7 @@
       </objects>
       <objects name="World">
         <object>objects\Object_System_World_Tutorial</object>
+        <object>objects\Object_System_World_1</object>
       </objects>
     </objects>
     <objects name="Effect">
@@ -260,8 +282,8 @@
         <room>rooms\Room_15</room>
       </rooms>
       <rooms name="Page 2">
-        <room>rooms\Room_17</room>
         <room>rooms\Room_16</room>
+        <room>rooms\Room_17</room>
         <room>rooms\Room_18</room>
         <room>rooms\Room_19</room>
         <room>rooms\Room_20</room>
@@ -283,6 +305,34 @@
         <room>rooms\Room_34</room>
         <room>rooms\Room_35</room>
         <room>rooms\Room_36</room>
+      </rooms>
+    </rooms>
+    <rooms name="World 1">
+      <rooms name="Page 1">
+        <room>rooms\Room_1_1</room>
+        <room>rooms\Room_1_2</room>
+        <room>rooms\Room_1_3</room>
+        <room>rooms\Room_1_4</room>
+        <room>rooms\Room_1_5</room>
+        <room>rooms\Room_1_6</room>
+        <room>rooms\Room_1_7</room>
+        <room>rooms\Room_1_8</room>
+        <room>rooms\Room_1_9</room>
+        <room>rooms\Room_1_10</room>
+        <room>rooms\Room_1_11</room>
+        <room>rooms\Room_1_12</room>
+        <room>rooms\Room_1_13</room>
+        <room>rooms\Room_1_14</room>
+        <room>rooms\Room_1_15</room>
+      </rooms>
+      <rooms name="Page 2">
+        <room>rooms\Room_1_16</room>
+        <room>rooms\Room_1_17</room>
+        <room>rooms\Room_1_18</room>
+        <room>rooms\Room_1_19</room>
+        <room>rooms\Room_1_20</room>
+        <room>rooms\Room_1_21</room>
+        <room>rooms\Room_1_22</room>
       </rooms>
     </rooms>
   </rooms>

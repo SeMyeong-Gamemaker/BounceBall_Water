@@ -72,7 +72,7 @@ alarm[0] = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( Shadow == true ) { draw_sprite_ext( sprite_index, -1, x, y + 8, 1, 1, 0, c_dkgray, 1 ); }
+            <string>if( Shadow == true ) { draw_sprite_ext( sprite_index, -1, x, y + 8, 1, 1, 0, c_dkgray, 0.5 ); }
 draw_self();
 </string>
           </argument>

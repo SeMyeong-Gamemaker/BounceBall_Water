@@ -27,11 +27,16 @@
             <kind>1</kind>
             <string>Tutorial = false;
 Unfinished = false;
-switch( Object_System_StageSelect.i ) {
 
-    case 1 : case 2 : case 6 : case 7 : case 11 : case 12 : case 16 : case 21 : case 26 : case 31 : case 32 : case 36 : Tutorial = true; break;
-    case 30 : Unfinished = true; break;
-            
+if( global.World == 0 ) {
+
+    switch( Object_System_StageSelect.i ) {
+
+            case 1 : case 2 : case 6 : case 7 : case 11 : case 12 : case 16 : case 21 : case 26 : case 31 : case 32 : case 36 : Tutorial = true; break;
+            case 30 : Unfinished = true; break;
+         
+    }
+
 }
 </string>
           </argument>
@@ -55,12 +60,12 @@ switch( Object_System_StageSelect.i ) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.Stage_Death[Stage_Number] = 0; 
-global.Stage_Time[Stage_Number] = 0;
-global.Stage_Fire_Amount[Stage_Number] = 0;
-global.Stage_Completion[Stage_Number] = 0;
+            <string>global.Stage_Death[global.World,Stage_Number] = 0; 
+global.Stage_Time[global.World,Stage_Number] = 0;
+global.Stage_Fire_Amount[global.World,Stage_Number] = 0;
+global.Stage_Completion[global.World,Stage_Number] = 0;
             
-if( global.Stage_Unlock[ Stage_Number ] == true ) { room_goto( global.Stage_Room[ Stage_Number ] ); }
+if( global.Stage_Unlock[ global.World,Stage_Number ] == true ) { room_goto( global.Stage_Room[ global.World,Stage_Number ] ); }
 </string>
           </argument>
         </arguments>
@@ -86,7 +91,7 @@ if( global.Stage_Unlock[ Stage_Number ] == true ) { room_goto( global.Stage_Room
             <string>draw_set_font( Font_24 );
 draw_set_halign( fa_center );
 draw_set_valign( fa_middle );
-if( global.Stage_Unlock[ Stage_Number ] == true ) {
+if( global.Stage_Unlock[ global.World,Stage_Number ] == true ) {
 
     draw_sprite( Sprite_System_StageButton, -1, x, y );
     
@@ -94,9 +99,9 @@ if( global.Stage_Unlock[ Stage_Number ] == true ) {
     if( Tutorial == true ) { draw_sprite( Sprite_Icon_Tutorial, -1, x, y + 8 ); }
     if( Unfinished == true ) { draw_sprite( Sprite_Icon_Unfinished, -1, x, y + 8 ); }
     draw_text_transformed( x, y, string( Stage_Number ) + "##", 1, 1, 0 );
-    if( global.Stage_Completion_Record[ Stage_Number ] &gt; 0 ) { draw_sprite( Sprite_System_StageButton_Completion, global.Stage_Completion_Record[ Stage_Number ] * 100 div 20 - 1, x, y + 32 ); }
-    if( global.Stage_Fire_Record[ Stage_Number ] == global.Stage_Fire[ Stage_Number ] ) { draw_sprite( Sprite_Icon_Fire_Perfect, -1, x - ( sprite_width / 2 ) + 16, y - ( sprite_height / 2 ) + 16 ); }
-    if( global.Stage_Death_Record[ Stage_Number ] == 0 ) { draw_sprite( Sprite_Icon_Death_Perfect, -1, x + ( sprite_width / 2 ) - 16, y - ( sprite_height / 2 ) + 16 ); }
+    if( global.Stage_Completion_Record[ global.World,Stage_Number ] &gt; 0 ) { draw_sprite( Sprite_System_StageButton_Completion, global.Stage_Completion_Record[ global.World,Stage_Number ] * 100 div 20 - 1, x, y + 32 ); }
+    if( global.Stage_Fire_Record[ global.World,Stage_Number ] == global.Stage_Fire[ global.World,Stage_Number ] ) { draw_sprite( Sprite_Icon_Fire_Perfect, -1, x - ( sprite_width / 2 ) + 16, y - ( sprite_height / 2 ) + 16 ); }
+    if( global.Stage_Death_Record[ global.World,Stage_Number ] == 0 ) { draw_sprite( Sprite_Icon_Death_Perfect, -1, x + ( sprite_width / 2 ) - 16, y - ( sprite_height / 2 ) + 16 ); }
     
     draw_set_alpha( 1 );
     

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto( Room_Stage );
+            <string>global.World = 0;
+room_goto( Room_Stage );
 </string>
           </argument>
         </arguments>
