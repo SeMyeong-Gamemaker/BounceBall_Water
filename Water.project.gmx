@@ -137,6 +137,8 @@
       <sprite>sprites\Sprite_Background_Web</sprite>
       <sprite>sprites\Sprite_Background_1</sprite>
       <sprite>sprites\Sprite_Background_2</sprite>
+      <sprite>sprites\Sprite_Background_Tutorial</sprite>
+      <sprite>sprites\Sprite_Background_Title</sprite>
     </sprites>
     <sprites name="Effect">
       <sprite>sprites\Sprite_Effect_Drop</sprite>
@@ -153,6 +155,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\Background_Web</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
