@@ -51,6 +51,7 @@
       </sprites>
       <sprites name="Fire">
         <sprite>sprites\Sprite_Fire_64</sprite>
+        <sprite>sprites\Sprite_Fire_64_Ani</sprite>
       </sprites>
       <sprites name="Broken">
         <sprite>sprites\Sprite_Wall_Broken_64</sprite>
