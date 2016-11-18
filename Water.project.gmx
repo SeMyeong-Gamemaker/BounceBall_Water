@@ -221,12 +221,12 @@
         <object>objects\Object_Moving_Horizontal_64</object>
         <object>objects\Object_Moving_Vertical_64</object>
       </objects>
-      <object>objects\Object_Pipe_64</object>
       <objects name="Fan">
         <object>objects\Object_Fan_Parent</object>
         <object>objects\Object_Fan_64</object>
         <object>objects\Object_Fan_Wind_64</object>
       </objects>
+      <object>objects\Object_Pipe_64</object>
     </objects>
     <objects name="System">
       <object>objects\Object_System_Page</object>
@@ -334,6 +334,7 @@
         <room>rooms\Room_1_20</room>
         <room>rooms\Room_1_21</room>
         <room>rooms\Room_1_22</room>
+        <room>rooms\Room_1_23</room>
       </rooms>
     </rooms>
   </rooms>
