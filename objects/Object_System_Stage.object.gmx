@@ -96,6 +96,8 @@ global.Stage_Room[1,20] = Room_1_20;
 global.Stage_Room[1,21] = Room_1_21;
 global.Stage_Room[1,22] = Room_1_22;
 global.Stage_Room[1,23] = Room_1_23;
+global.Stage_Room[1,24] = Room_1_24;
+global.Stage_Room[1,25] = Room_1_25;
 
 global.World = 0;
 

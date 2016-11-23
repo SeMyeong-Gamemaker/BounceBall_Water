@@ -55,6 +55,7 @@
       </sprites>
       <sprites name="Broken">
         <sprite>sprites\Sprite_Wall_Broken_64</sprite>
+        <sprite>sprites\Sprite_Wall_Broken_64_1</sprite>
         <sprite>sprites\Sprite_Wall_Broken_64_Mask</sprite>
         <sprite>sprites\Sprite_Wall_Broken_Bridge_64</sprite>
         <sprite>sprites\Sprite_Wall_Broken_Bridge_64_Mask</sprite>
@@ -211,6 +212,7 @@
       <objects name="Broken">
         <object>objects\Object_Wall_Broken_Parent</object>
         <object>objects\Object_Wall_Broken_64</object>
+        <object>objects\Object_Wall_Broken_64_1</object>
         <object>objects\Object_Wall_Broken_Bridge_Parent</object>
         <object>objects\Object_Wall_Broken_Bridge_64</object>
       </objects>
@@ -338,6 +340,8 @@
         <room>rooms\Room_1_21</room>
         <room>rooms\Room_1_22</room>
         <room>rooms\Room_1_23</room>
+        <room>rooms\Room_1_24</room>
+        <room>rooms\Room_1_25</room>
       </rooms>
     </rooms>
   </rooms>
