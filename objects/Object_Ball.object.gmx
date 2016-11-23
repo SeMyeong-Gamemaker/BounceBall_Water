@@ -65,6 +65,10 @@ global.Controll_Right = false;
 
 global.Display_Width = display_get_width()
 global.Display_Height = display_get_height()
+
+//size
+image_xscale = 0.75;
+image_yscale = 0.75;
 </string>
           </argument>
         </arguments>
@@ -89,7 +93,19 @@ global.Display_Height = display_get_height()
             <kind>1</kind>
             <string>global.Stage_Death[ global.Stage_World, global.Stage_Number ]++;
 global.Stage_Fire_Amount[ global.Stage_World, global.Stage_Number ] = 0;
-room_restart();
+
+repeat( 20 ) {
+
+    with( instance_create( x + lengthdir_x( random( 32 ), random( 360 ) ), y + lengthdir_y( random( 32 ), random( 360 ) ), Object_Effect_Drop ) ) {
+    
+        motion_add( random_range( 30, 150 ), random_range( 5, 10 ) );
+    
+    }
+
+}
+
+Object_System_StageInGame.alarm[0] = room_speed * 1;
+
 </string>
           </argument>
         </arguments>
@@ -126,9 +142,6 @@ if( device_mouse_check_button( 0, mb_left ) || device_mouse_check_button( 1, mb_
 
 } else { global.Controll_Left = false; global.Controll_Right = false; }
 
-
-
-//else { global.Controll_Left = false; global.Controll_Right = false; }
 
 //Movement
 
@@ -189,79 +202,6 @@ view_angle[0] = global.Camera_Angle * 5 * ( point_distance( x, 0, global.Camera_
 if( x - ( sprite_width / 2 ) &lt; 0 ) { x = ( sprite_width / 2 ); }
 if( x + ( sprite_width / 2 ) &gt; room_width ) { x = room_width - ( sprite_width / 2 ); }
 if( y - ( sprite_height / 2 ) &gt; room_height ) { instance_destroy(); }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="Object_Fan_Wind_64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if( vspeed &gt; 5 ) { vspeed -= 0.5; }
-else { vspeed = - 5; }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="Object_Fan_64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>move_contact_solid( direction, -1 );
-
-//Vertical
-
-if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) ) {
-
-    vspeed = - global.Ball_Jump_Height;
-
-}
-else{
-
-    vspeed = 0;
-
-}
-
-x = round( x );
-y = round( y );
-
-repeat( 10 ) {
-
-    with( instance_create( x, y + ( sprite_height / 2 ), Object_Effect_Drop ) ) {
-    
-        motion_add( random_range( 30, 150 ), random_range( 5, 10 ) );
-    
-    }
-
-}
 
 </string>
           </argument>
@@ -341,6 +281,80 @@ y = round( y );
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="Object_Fan_Wind_64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if( vspeed &gt; 5 ) { vspeed -= 0.5; }
+else { vspeed = - 5; }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Object_Fan_64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>move_contact_solid( direction, -1 );
+
+//Vertical
+
+if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) &amp;&amp; abs( vspeed ) != global.Ball_Jump_Height ) {
+
+    vspeed = - global.Ball_Jump_Height;
+
+}
+else{
+
+    vspeed = 0;
+
+}
+
+x = round( x );
+y = round( y );
+
+repeat( 10 ) {
+
+    with( instance_create( x, y + ( sprite_height / 2 ), Object_Effect_Drop ) ) {
+    
+        motion_add( random_range( 30, 150 ), random_range( 5, 10 ) );
+    
+    }
+
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="Object_Moving_Parent">
       <action>
         <libid>1</libid>
@@ -362,7 +376,7 @@ y = round( y );
 
 //Vertical
 
-if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) ) {
+if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) &amp;&amp; abs( vspeed ) != global.Ball_Jump_Height ) {
 
     vspeed = - global.Ball_Jump_Height;
 
@@ -412,7 +426,7 @@ repeat( 10 ) {
 
 //Vertical
 
-if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) ) {
+if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) &amp;&amp; abs( vspeed ) != global.Ball_Jump_Height ) {
 
     vspeed = - global.Ball_Jump_Height;
     if( object_get_name( other.object_index ) == "Object_Drain_Down_64" ) {
@@ -476,7 +490,7 @@ repeat( 10 ) {
 
 //Vertical
 
-if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) ) {
+if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) &amp;&amp; abs( vspeed ) != global.Ball_Jump_Height ) {
 
     vspeed = - global.Ball_Jump_Height;
 
@@ -529,9 +543,11 @@ if( other.Health &lt;= 0 ) { with( other ) { instance_destroy(); } }
 
 //Vertical
 
-if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) ) {
+if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) &amp;&amp; abs( vspeed ) != global.Ball_Jump_Height ) {
 
     vspeed = - global.Ball_Jump_Height;
+    other.Health--;
+    if( other.Health &lt;= 0 ) { with( other ) { instance_destroy(); } }
 
 }
 else{
@@ -552,9 +568,6 @@ repeat( 10 ) {
     }
 
 }
-
-other.Health--;
-if( other.Health &lt;= 0 ) { with( other ) { instance_destroy(); } }
 
 </string>
           </argument>
@@ -582,7 +595,7 @@ if( other.Health &lt;= 0 ) { with( other ) { instance_destroy(); } }
 
 //Vertical
 
-if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) ) {
+if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) &amp;&amp; abs( vspeed ) != global.Ball_Jump_Height ) {
 
     vspeed = - global.Ball_Jump_Height;
 
@@ -657,7 +670,7 @@ if( other.Sponge &gt; 0 ) {
 
 //Vertical
 
-if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) ) {
+if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) &amp;&amp; abs( vspeed ) != global.Ball_Jump_Height ) {
 
     vspeed = - global.Ball_Jump_Height;
 
@@ -736,7 +749,7 @@ if( other.Purifier &gt; 0 ) {
 
 //Vertical
 
-if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) ) {
+if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) &amp;&amp; abs( vspeed ) != global.Ball_Jump_Height ) {
 
     vspeed = - global.Ball_Jump_Height;
 
@@ -811,7 +824,7 @@ if( other.Filter &gt; 0 ) {
 
 //Vertical
 
-if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) ) {
+if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) &amp;&amp; abs( vspeed ) != global.Ball_Jump_Height ) {
 
     vspeed = - global.Ball_Jump_Height;
 
@@ -861,7 +874,7 @@ repeat( 10 ) {
 
 //Vertical
 
-if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) ) {
+if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) &amp;&amp; abs( vspeed ) != global.Ball_Jump_Height ) {
 
     vspeed = - global.Ball_Jump_Height;
 
@@ -908,8 +921,8 @@ repeat( 10 ) {
           <argument>
             <kind>1</kind>
             <string>draw_sprite_ext( sprite_index, -1, x, y + 4, image_xscale, image_yscale, 0, c_dkgray, 0.5 );
-draw_sprite_ext( Sprite_Ball_64, -1, x, y, 1, 1, 0, c_white, 1 );
-draw_sprite_ext( Sprite_Ball_Polluted_64, -1, x, y, 1, 1, 0, c_white, ( global.Ball_Pollution / global.Ball_Water_Max ) );
+draw_sprite_ext( Sprite_Ball_64, -1, x, y, image_xscale, image_yscale, 0, c_white, 1 );
+draw_sprite_ext( Sprite_Ball_Polluted_64, -1, x, y, image_xscale, image_yscale, 0, c_white, ( global.Ball_Pollution / global.Ball_Water_Max ) );
 </string>
           </argument>
         </arguments>

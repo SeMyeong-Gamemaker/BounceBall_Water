@@ -51,9 +51,11 @@
       </sprites>
       <sprites name="Fire">
         <sprite>sprites\Sprite_Fire_64</sprite>
+        <sprite>sprites\Sprite_Fire_64_Ani</sprite>
       </sprites>
       <sprites name="Broken">
         <sprite>sprites\Sprite_Wall_Broken_64</sprite>
+        <sprite>sprites\Sprite_Wall_Broken_64_1</sprite>
         <sprite>sprites\Sprite_Wall_Broken_64_Mask</sprite>
         <sprite>sprites\Sprite_Wall_Broken_Bridge_64</sprite>
         <sprite>sprites\Sprite_Wall_Broken_Bridge_64_Mask</sprite>
@@ -136,6 +138,8 @@
       <sprite>sprites\Sprite_Background_Web</sprite>
       <sprite>sprites\Sprite_Background_1</sprite>
       <sprite>sprites\Sprite_Background_2</sprite>
+      <sprite>sprites\Sprite_Background_Tutorial</sprite>
+      <sprite>sprites\Sprite_Background_Title</sprite>
     </sprites>
     <sprites name="Effect">
       <sprite>sprites\Sprite_Effect_Drop</sprite>
@@ -149,9 +153,14 @@
       <sprite>sprites\Sprite_Item_Gum</sprite>
       <sprite>sprites\sprite41</sprite>
     </sprites>
+    <sprite>sprites\sprite95</sprite>
+    <sprite>sprites\sprite96</sprite>
+    <sprite>sprites\sprite98</sprite>
+    <sprite>sprites\sprite99</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Background_Web</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -207,6 +216,7 @@
       <objects name="Broken">
         <object>objects\Object_Wall_Broken_Parent</object>
         <object>objects\Object_Wall_Broken_64</object>
+        <object>objects\Object_Wall_Broken_64_1</object>
         <object>objects\Object_Wall_Broken_Bridge_Parent</object>
         <object>objects\Object_Wall_Broken_Bridge_64</object>
       </objects>
@@ -220,12 +230,12 @@
         <object>objects\Object_Moving_Horizontal_64</object>
         <object>objects\Object_Moving_Vertical_64</object>
       </objects>
-      <object>objects\Object_Pipe_64</object>
       <objects name="Fan">
         <object>objects\Object_Fan_Parent</object>
         <object>objects\Object_Fan_64</object>
         <object>objects\Object_Fan_Wind_64</object>
       </objects>
+      <object>objects\Object_Pipe_64</object>
     </objects>
     <objects name="System">
       <object>objects\Object_System_Page</object>
@@ -257,6 +267,7 @@
       <object>objects\Object_Effect_Drop</object>
       <object>objects\Object_Effect_Debri</object>
     </objects>
+    <object>objects\object62</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
@@ -333,8 +344,14 @@
         <room>rooms\Room_1_20</room>
         <room>rooms\Room_1_21</room>
         <room>rooms\Room_1_22</room>
+        <room>rooms\Room_1_23</room>
+        <room>rooms\Room_1_24</room>
+        <room>rooms\Room_1_25</room>
+        <room>rooms\Room_1_26</room>
+        <room>rooms\Room_1_27</room>
       </rooms>
     </rooms>
+    <room>rooms\Room_1_25_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
