@@ -153,6 +153,10 @@
       <sprite>sprites\Sprite_Item_Gum</sprite>
       <sprite>sprites\sprite41</sprite>
     </sprites>
+    <sprite>sprites\sprite95</sprite>
+    <sprite>sprites\sprite96</sprite>
+    <sprite>sprites\sprite98</sprite>
+    <sprite>sprites\sprite99</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Background_Web</background>
@@ -263,6 +267,7 @@
       <object>objects\Object_Effect_Drop</object>
       <object>objects\Object_Effect_Debri</object>
     </objects>
+    <object>objects\object62</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
@@ -342,8 +347,11 @@
         <room>rooms\Room_1_23</room>
         <room>rooms\Room_1_24</room>
         <room>rooms\Room_1_25</room>
+        <room>rooms\Room_1_26</room>
+        <room>rooms\Room_1_27</room>
       </rooms>
     </rooms>
+    <room>rooms\Room_1_25_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

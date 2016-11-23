@@ -96,7 +96,7 @@ Fire_Health_Max = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext( sprite_index, -1, x, y, Fire_Health / Fire_Health_Max, Fire_Health / Fire_Health_Max, 0, c_white, 1 );
+            <string>draw_sprite_ext( sprite_index, -1, x, y, 0.2 + ( Fire_Health / Fire_Health_Max * 0.8 ), 0.2 + ( Fire_Health / Fire_Health_Max * 0.8 ), 0, c_white, 1 );
 </string>
           </argument>
         </arguments>
