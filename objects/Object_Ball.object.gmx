@@ -143,9 +143,6 @@ if( device_mouse_check_button( 0, mb_left ) || device_mouse_check_button( 1, mb_
 } else { global.Controll_Left = false; global.Controll_Right = false; }
 
 
-
-//else { global.Controll_Left = false; global.Controll_Right = false; }
-
 //Movement
 
 gravity = global.Ball_Gravity;
