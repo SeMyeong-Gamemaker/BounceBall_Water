@@ -88,8 +88,6 @@ randomize();</code>
     <instance objName="Object_Wall_Grass_Top_64" x="1344" y="640" name="inst_1568D0A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Grass_Top_64" x="1280" y="640" name="inst_10815419" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Pollution_64" x="1344" y="288" name="inst_72EDC86E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Wall_Bridge_64" x="832" y="640" name="inst_242A59C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Wall_Bridge_64" x="896" y="640" name="inst_4DDA411F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Bridge_64" x="960" y="640" name="inst_406A59DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Bridge_64" x="1024" y="640" name="inst_65B9AE9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Bridge_64" x="1088" y="640" name="inst_4153072B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -101,13 +99,12 @@ randomize();</code>
     <instance objName="Object_Wall_Broken_Bridge_64" x="448" y="640" name="inst_68ADA9EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Broken_Bridge_64" x="512" y="640" name="inst_7CD7A978" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Broken_64" x="384" y="576" name="inst_8F5BBA52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Fire_64" x="384" y="544" name="inst_BEECE384" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Broken_Bridge_64" x="576" y="640" name="inst_DB132E7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Broken_Bridge_64" x="640" y="640" name="inst_275CE605" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Broken_Bridge_64" x="704" y="640" name="inst_65948D54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Broken_Bridge_64" x="768" y="640" name="inst_19EEC43A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Wall_Broken_64" x="640" y="576" name="inst_1024F46C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Fire_64" x="640" y="544" name="inst_EAD9FA91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Broken_64" x="704" y="480" name="inst_1024F46C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Fire_64" x="704" y="448" name="inst_EAD9FA91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Drain_Down_64" x="512" y="576" name="inst_43F2A789" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Drain_Down_64" x="448" y="576" name="inst_F5B58D05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Drain_Down_64" x="704" y="576" name="inst_03674A21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -120,16 +117,6 @@ randomize();</code>
     <instance objName="Object_Wall_Grass_Top_64" x="1152" y="256" name="inst_6279CF0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Grass_Top_64" x="1280" y="256" name="inst_5FF736FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Grass_Top_64" x="1216" y="256" name="inst_3B949C90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Wall_Grass_Bot_64" x="576" y="320" name="inst_741EFEBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Wall_Grass_Bot_64" x="512" y="320" name="inst_38F76280" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Wall_Grass_Bot_64" x="448" y="320" name="inst_07E4E58E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Wall_Grass_Bot_64" x="384" y="320" name="inst_B84F3BEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Wall_Grass_Bot_64" x="320" y="320" name="inst_6D23CB6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Wall_Grass_Bot_64" x="256" y="320" name="inst_10BFDB17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Wall_Grass_Bot_64" x="192" y="320" name="inst_1C27E98A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Wall_Grass_Bot_64" x="128" y="320" name="inst_A3329514" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Wall_Grass_Bot_64" x="64" y="320" name="inst_29A9B5A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Wall_Grass_Bot_64" x="0" y="320" name="inst_CA00A007" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Grass_Mid_64" x="512" y="64" name="inst_616BC976" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Grass_Mid_64" x="512" y="0" name="inst_C67976DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Grass_Mid_64" x="576" y="0" name="inst_70D47406" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -181,6 +168,19 @@ randomize();</code>
     <instance objName="Object_Wall_Grass_Mid_64" x="64" y="64" name="inst_17AE8F7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Wall_Grass_Mid_64" x="128" y="64" name="inst_5E7DC197" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Pollution_64" x="64" y="672" name="inst_70A6B3BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Grass_Bot_64" x="576" y="320" name="inst_2036B4BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Grass_Bot_64" x="512" y="320" name="inst_A3C49EE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Grass_Bot_64" x="448" y="320" name="inst_83412A2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Grass_Bot_64" x="384" y="320" name="inst_E295582F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Grass_Bot_64" x="320" y="320" name="inst_F5A8B029" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Grass_Bot_64" x="256" y="320" name="inst_1BE245B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Grass_Bot_64" x="192" y="320" name="inst_14461F30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Grass_Bot_64" x="128" y="320" name="inst_951D77E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Grass_Bot_64" x="64" y="320" name="inst_158DA5C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Grass_Bot_64" x="0" y="320" name="inst_D27FC2A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Broken_Bridge_64" x="832" y="640" name="inst_F6C3459C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Broken_Bridge_64" x="896" y="640" name="inst_E2C03C4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Broken_64" x="576" y="576" name="inst_75A8F6C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

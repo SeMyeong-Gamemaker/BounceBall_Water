@@ -34,7 +34,7 @@ if( global.World == 1 ) {
     switch( global.Stage_Page[global.World] ) {
     
         case 0 : Background = Sprite_Background_1; break;
-        case 1 : Background = Sprite_Background_2; break;
+        case 1 : case 2 : Background = Sprite_Background_2; break;
 
     }
     

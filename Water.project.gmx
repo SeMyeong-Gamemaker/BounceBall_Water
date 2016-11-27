@@ -47,6 +47,8 @@
       <sprites name="Sponge">
         <sprite>sprites\Sprite_Sponge_64</sprite>
         <sprite>sprites\Sprite_Sponge_Wet_64</sprite>
+        <sprite>sprites\Sprite_Sponge_Sand_64</sprite>
+        <sprite>sprites\Sprite_Sponge_Sand_Wet_64</sprite>
         <sprite>sprites\Sprite_Sponge_64_Mask</sprite>
       </sprites>
       <sprites name="Fire">
@@ -98,6 +100,9 @@
         <sprite>sprites\Sprite_Wall_Grass_Bot_64</sprite>
         <sprite>sprites\Sprite_Wall_Grass_Bot_1_64</sprite>
       </sprites>
+      <sprites name="Jumper">
+        <sprite>sprites\Sprite_Jumper_Leaf_64</sprite>
+      </sprites>
     </sprites>
     <sprites name="UI">
       <sprite>sprites\Sprite_UI_Bar</sprite>
@@ -131,6 +136,7 @@
         <sprites name="World 1">
           <sprite>sprites\Sprite_System_World1_1</sprite>
           <sprite>sprites\Sprite_System_World1_2</sprite>
+          <sprite>sprites\Sprite_System_World1_3</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -210,6 +216,7 @@
       <objects name="Sponge">
         <object>objects\Object_Sponge_Parent</object>
         <object>objects\Object_Sponge_64</object>
+        <object>objects\Object_Sponge_Sand_64</object>
         <object>objects\Object_Sponge_Inside_Parent</object>
         <object>objects\Object_Sponge_Inside_64</object>
       </objects>
@@ -235,7 +242,17 @@
         <object>objects\Object_Fan_64</object>
         <object>objects\Object_Fan_Wind_64</object>
       </objects>
-      <object>objects\Object_Pipe_64</object>
+      <objects name="Jumper">
+        <object>objects\Object_Jumper_Parent</object>
+        <object>objects\Object_Jumper_Leaf_64</object>
+      </objects>
+      <objects name="Pipe">
+        <object>objects\Object_Pipe_64</object>
+        <object>objects\Object_PipeIn_Parent</object>
+        <object>objects\Object_PipeIn_64</object>
+        <object>objects\Object_PipeOut_Parent</object>
+        <object>objects\Object_PipeOut_64</object>
+      </objects>
     </objects>
     <objects name="System">
       <object>objects\Object_System_Page</object>
@@ -350,6 +367,11 @@
         <room>rooms\Room_1_26</room>
         <room>rooms\Room_1_27</room>
         <room>rooms\Room_1_28</room>
+        <room>rooms\Room_1_29</room>
+        <room>rooms\Room_1_30</room>
+      </rooms>
+      <rooms name="Page 3">
+        <room>rooms\Room_1_31</room>
       </rooms>
     </rooms>
     <room>rooms\Room_1_25_1</room>
