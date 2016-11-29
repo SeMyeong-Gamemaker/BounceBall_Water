@@ -284,7 +284,6 @@
       <object>objects\Object_Effect_Drop</object>
       <object>objects\Object_Effect_Debri</object>
     </objects>
-    <object>objects\object62</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
@@ -372,6 +371,7 @@
       </rooms>
       <rooms name="Page 3">
         <room>rooms\Room_1_31</room>
+        <room>rooms\Room_1_32</room>
       </rooms>
     </rooms>
     <room>rooms\Room_1_25_1</room>
