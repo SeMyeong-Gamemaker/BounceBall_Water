@@ -208,6 +208,108 @@ if( y - ( sprite_height / 2 ) &gt; room_height ) { instance_destroy(); }
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="Object_Temp_PipeOut">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>move_contact_solid( direction, -1 );
+
+//Vertical
+
+if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) &amp;&amp; abs( vspeed ) != global.Ball_Jump_Height ) {
+
+    vspeed = - global.Ball_Jump_Height;
+
+}
+else{
+
+    vspeed = 0;
+
+}
+
+x = round( x );
+y = round( y );
+
+repeat( 10 ) {
+
+    with( instance_create( x, y + ( sprite_height / 2 ), Object_Effect_Drop ) ) {
+    
+        motion_add( random_range( 30, 150 ), random_range( 5, 10 ) );
+    
+    }
+
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Object_Temp_PipeIn">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>move_contact_solid( direction, -1 );
+
+//Vertical
+
+if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) &amp;&amp; abs( vspeed ) != global.Ball_Jump_Height ) {
+
+    vspeed = - global.Ball_Jump_Height;
+    x = Object_Temp_PipeOut.x;
+    y = Object_Temp_PipeOut.y - other.sprite_height;
+
+}
+else{
+
+    vspeed = 0;
+
+}
+
+x = round( x );
+y = round( y );
+
+repeat( 10 ) {
+
+    with( instance_create( x, y + ( sprite_height / 2 ), Object_Effect_Drop ) ) {
+    
+        motion_add( random_range( 30, 150 ), random_range( 5, 10 ) );
+    
+    }
+
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="Object_Pipe_64">
       <action>
         <libid>1</libid>

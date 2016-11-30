@@ -136,9 +136,10 @@
     </sprites>
     <sprites name="Background">
       <sprite>sprites\Sprite_Background_Web</sprite>
+      <sprite>sprites\Sprite_Background_Tutorial</sprite>
       <sprite>sprites\Sprite_Background_1</sprite>
       <sprite>sprites\Sprite_Background_2</sprite>
-      <sprite>sprites\Sprite_Background_Tutorial</sprite>
+      <sprite>sprites\Sprite_Background_3</sprite>
       <sprite>sprites\Sprite_Background_Title</sprite>
     </sprites>
     <sprites name="Effect">
@@ -169,6 +170,10 @@
     <font>fonts\Font_24</font>
   </fonts>
   <objects name="objects">
+    <objects name="Temp">
+      <object>objects\Object_Temp_PipeIn</object>
+      <object>objects\Object_Temp_PipeOut</object>
+    </objects>
     <objects name="Ball">
       <object>objects\Object_Ball</object>
       <object>objects\Object_Ball_UI</object>
@@ -350,9 +355,13 @@
         <room>rooms\Room_1_26</room>
         <room>rooms\Room_1_27</room>
         <room>rooms\Room_1_28</room>
+        <room>rooms\Room_1_25_1</room>
+        <room>rooms\Room_1_30</room>
+      </rooms>
+      <rooms name="Page 3">
+        <room>rooms\Room_1_31</room>
       </rooms>
     </rooms>
-    <room>rooms\Room_1_25_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
