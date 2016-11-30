@@ -101,17 +101,11 @@ global.Stage_Room[1,25] = Room_1_25;
 global.Stage_Room[1,26] = Room_1_26;
 global.Stage_Room[1,27] = Room_1_27;
 global.Stage_Room[1,28] = Room_1_28;
-<<<<<<< HEAD
 global.Stage_Room[1,29] = Room_1_29;
 global.Stage_Room[1,30] = Room_1_30;
 global.Stage_Room[1,31] = Room_1_31;
 global.Stage_Room[1,32] = Room_1_32;
 global.Stage_Room[1,33] = Room_1_33;
-=======
-global.Stage_Room[1,29] = Room_1_25_1;
-global.Stage_Room[1,30] = Room_1_30;
-global.Stage_Room[1,31] = Room_1_31;
->>>>>>> origin/Unstable
 
 global.World = 0;
 
