@@ -208,7 +208,11 @@ if( y - ( sprite_height / 2 ) &gt; room_height ) { instance_destroy(); }
         </arguments>
       </action>
     </event>
+<<<<<<< HEAD
     <event eventtype="4" ename="Object_PipeOut_Parent">
+=======
+    <event eventtype="4" ename="Object_Temp_PipeOut">
+>>>>>>> origin/Unstable
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -258,7 +262,11 @@ repeat( 10 ) {
         </arguments>
       </action>
     </event>
+<<<<<<< HEAD
     <event eventtype="4" ename="Object_PipeIn_Parent">
+=======
+    <event eventtype="4" ename="Object_Temp_PipeIn">
+>>>>>>> origin/Unstable
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -282,8 +290,13 @@ repeat( 10 ) {
 if( y + ( sprite_height / 2 ) - 2 &lt; other.y - ( other.sprite_height / 2 ) &amp;&amp; abs( vspeed ) != global.Ball_Jump_Height ) {
 
     vspeed = - global.Ball_Jump_Height;
+<<<<<<< HEAD
     x = Object_PipeOut_Parent.x
     y = Object_PipeOut_Parent.y - Object_PipeOut_Parent.sprite_height;
+=======
+    x = Object_Temp_PipeOut.x;
+    y = Object_Temp_PipeOut.y - other.sprite_height;
+>>>>>>> origin/Unstable
 
 }
 else{
