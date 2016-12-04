@@ -41,7 +41,19 @@ switch( Room_Size ) {
         room_width = 1280;
         room_height = 720;
         break;
+        
+    case "Room_Custom_Medium" :
+        
+        room_width = 1920;
+        room_height = 1080;
+        break;
 
+    case "Room_Custom_Large" :
+        
+        room_width = 2560;
+        room_height = 1440;
+        break;
+        
 }
 
 Room_Width = ini_read_real( "Stage" + string( global.Stage_Last[2] ), "Room Width", noone );

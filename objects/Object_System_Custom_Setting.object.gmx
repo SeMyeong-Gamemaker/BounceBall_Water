@@ -70,7 +70,10 @@ Block = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Mouse_Grid_X = floor( mouse_x / 64 );
+            <string>x = mouse_x;
+y = mouse_y;
+
+Mouse_Grid_X = floor( mouse_x / 64 );
 Mouse_Grid_Y = floor( mouse_y / 64 );
 Mouse_Position_X = Mouse_Grid_X * 64;
 Mouse_Position_Y = Mouse_Grid_Y * 64;

@@ -94,6 +94,24 @@ with( instance_create( sprite_width / 10 * 9, y + 48, Object_System_Custom_Menu_
             <string>x = view_xview + ( view_wview / 2 );
 if( Open == false ) { y = view_yview + view_hview - 8; }
 else{ y = view_yview + view_hview - sprite_height + 8; }
+
+Object_System_Custom_Menu_Block.x = view_xview + Object_System_Custom_Menu_Block.Position_X;
+Object_System_Custom_Menu_Block.y = y + Object_System_Custom_Menu_Block.Position_Y;
+
+Object_System_Custom_Menu_Ball.x = view_xview + Object_System_Custom_Menu_Ball.Position_X;
+Object_System_Custom_Menu_Ball.y = y + Object_System_Custom_Menu_Ball.Position_Y;
+
+Object_System_Custom_Menu_Pipe.x = view_xview + Object_System_Custom_Menu_Pipe.Position_X;
+Object_System_Custom_Menu_Pipe.y = y + Object_System_Custom_Menu_Pipe.Position_Y;
+
+Object_System_Custom_Menu_Fire.x = view_xview + Object_System_Custom_Menu_Fire.Position_X;
+Object_System_Custom_Menu_Fire.y = y + Object_System_Custom_Menu_Fire.Position_Y;
+
+Object_System_Custom_Menu_Water.x = view_xview + Object_System_Custom_Menu_Water.Position_X;
+Object_System_Custom_Menu_Water.y = y + Object_System_Custom_Menu_Water.Position_Y;
+
+Object_System_Custom_Menu_Save.x = view_xview + Object_System_Custom_Menu_Save.Position_X;
+Object_System_Custom_Menu_Save.y = y + Object_System_Custom_Menu_Save.Position_Y;
 </string>
           </argument>
         </arguments>

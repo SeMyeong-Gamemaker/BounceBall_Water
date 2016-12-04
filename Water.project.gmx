@@ -319,7 +319,6 @@
     <room>rooms\Room_World</room>
     <room>rooms\Room_Stage</room>
     <room>rooms\Room_Complete</room>
-    <room>rooms\Room_Custom_Small</room>
     <rooms name="Tutorial World">
       <rooms name="Page 1">
         <room>rooms\Room_1</room>
@@ -412,6 +411,11 @@
       <room>rooms\Room_Custom_3</room>
       <room>rooms\Room_Custom_4</room>
       <room>rooms\Room_Custom_5</room>
+    </rooms>
+    <rooms name="Custom">
+      <room>rooms\Room_Custom_Small</room>
+      <room>rooms\Room_Custom_Medium</room>
+      <room>rooms\Room_Custom_Large</room>
     </rooms>
   </rooms>
   <help>
