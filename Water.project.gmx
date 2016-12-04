@@ -125,9 +125,11 @@
         <sprite>sprites\Sprite_Icon_Fire_Perfect</sprite>
         <sprite>sprites\Sprite_Icon_Tutorial</sprite>
         <sprite>sprites\Sprite_Icon_Unfinished</sprite>
+        <sprite>sprites\Sprite_Icon_Custom</sprite>
       </sprites>
       <sprites name="World">
         <sprite>sprites\Sprite_System_World_Tutorial</sprite>
+        <sprite>sprites\Sprite_System_World_Custom</sprite>
         <sprites name="Tutorial">
           <sprite>sprites\Sprite_System_Page_1</sprite>
           <sprite>sprites\Sprite_System_Page_2</sprite>
@@ -138,6 +140,10 @@
           <sprite>sprites\Sprite_System_World1_2</sprite>
           <sprite>sprites\Sprite_System_World1_3</sprite>
         </sprites>
+      </sprites>
+      <sprites name="Custom">
+        <sprite>sprites\Sprite_System_Custom_Menu</sprite>
+        <sprite>sprites\Sprite_System_Custom_Menu_Save</sprite>
       </sprites>
     </sprites>
     <sprites name="Background">
@@ -168,6 +174,7 @@
   <backgrounds name="background">
     <background>background\Background_Web</background>
     <background>background\background1</background>
+    <background>background\background2</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -261,6 +268,9 @@
       <object>objects\Object_System_Back</object>
       <object>objects\Object_System_Select</object>
       <object>objects\Object_System_Next</object>
+      <object>objects\Object_System_Make_Small</object>
+      <object>objects\Object_System_Make_Medium</object>
+      <object>objects\Object_System_Make_Large</object>
       <objects name="Stage">
         <object>objects\Object_System_Stage</object>
         <object>objects\Object_System_Subtitle</object>
@@ -279,6 +289,16 @@
       <objects name="World">
         <object>objects\Object_System_World_Tutorial</object>
         <object>objects\Object_System_World_1</object>
+        <object>objects\Object_System_World_Custom</object>
+      </objects>
+      <objects name="Custom">
+        <object>objects\Object_System_Custom_Setting</object>
+        <object>objects\Object_System_Custom_Block</object>
+        <object>objects\Object_System_Custom_Menu</object>
+        <object>objects\Object_System_Custom_Menu_Block</object>
+        <object>objects\Object_System_Custom_Menu_Ball</object>
+        <object>objects\Object_System_Custom_Menu_Pipe</object>
+        <object>objects\Object_System_Custom_Menu_Save</object>
       </objects>
     </objects>
     <objects name="Effect">
@@ -291,6 +311,7 @@
     <room>rooms\Room_World</room>
     <room>rooms\Room_Stage</room>
     <room>rooms\Room_Complete</room>
+    <room>rooms\Room_Custom_Small</room>
     <rooms name="Tutorial World">
       <rooms name="Page 1">
         <room>rooms\Room_1</room>

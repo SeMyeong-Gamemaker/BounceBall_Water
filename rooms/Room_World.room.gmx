@@ -53,6 +53,7 @@
   <instances>
     <instance objName="Object_System_World_Tutorial" x="320" y="360" name="inst_12A4AA7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_System_World_1" x="640" y="360" name="inst_91F5DEA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_System_World_Custom" x="960" y="360" name="inst_E4F325AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
