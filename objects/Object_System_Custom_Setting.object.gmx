@@ -80,7 +80,7 @@ if( ( Mouse_Grid_X &gt;= 0 &amp;&amp; Mouse_Grid_X &lt; Width ) &amp;&amp; ( Mou
     if( Grid[Mouse_Grid_X,Mouse_Grid_Y] == noone )  { Available = true; }
     else { Available = false; }
 
-    if( mouse_check_button( mb_left ) &amp;&amp; Available ) {
+    if( mouse_check_button( mb_left ) &amp;&amp; Available &amp;&amp; Mouse_Position_Y &lt; Object_System_Custom_Menu.y ) {
 
         Grid[Mouse_Grid_X,Mouse_Grid_Y] = Block;
         with( instance_create( Mouse_Position_X + 32, Mouse_Position_Y + 32, Object_System_Custom_Block ) ) {
