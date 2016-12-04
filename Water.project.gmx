@@ -26,6 +26,7 @@
       <sprites name="Water">
         <sprite>sprites\Sprite_Water_64</sprite>
         <sprite>sprites\Sprite_Water_64_Mask</sprite>
+        <sprite>sprites\Sprite_Water_64_Center</sprite>
         <sprite>sprites\Sprite_Pollution_64</sprite>
         <sprite>sprites\Sprite_Pollution_64_Mask</sprite>
       </sprites>
@@ -54,6 +55,7 @@
       <sprites name="Fire">
         <sprite>sprites\Sprite_Fire_64</sprite>
         <sprite>sprites\Sprite_Fire_64_Ani</sprite>
+        <sprite>sprites\Sprite_Fire_64_Center</sprite>
       </sprites>
       <sprites name="Broken">
         <sprite>sprites\Sprite_Wall_Broken_64</sprite>
@@ -139,6 +141,9 @@
           <sprite>sprites\Sprite_System_World1_1</sprite>
           <sprite>sprites\Sprite_System_World1_2</sprite>
           <sprite>sprites\Sprite_System_World1_3</sprite>
+        </sprites>
+        <sprites name="Custom">
+          <sprite>sprites\Sprite_System_Custom_1</sprite>
         </sprites>
       </sprites>
       <sprites name="Custom">
@@ -298,6 +303,8 @@
         <object>objects\Object_System_Custom_Menu_Block</object>
         <object>objects\Object_System_Custom_Menu_Ball</object>
         <object>objects\Object_System_Custom_Menu_Pipe</object>
+        <object>objects\Object_System_Custom_Menu_Fire</object>
+        <object>objects\Object_System_Custom_Menu_Water</object>
         <object>objects\Object_System_Custom_Menu_Save</object>
         <object>objects\Object_System_Custom_Initialize</object>
       </objects>

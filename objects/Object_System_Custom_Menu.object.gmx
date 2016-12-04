@@ -49,6 +49,20 @@ with( instance_create( sprite_width / 10 * 3, y + 48, Object_System_Custom_Menu_
 
 }
 
+with( instance_create( sprite_width / 10 * 4, y + 48, Object_System_Custom_Menu_Fire ) ) {
+
+    Position_X = other.sprite_width / 10 * 4;
+    Position_Y = 48;
+
+}
+
+with( instance_create( sprite_width / 10 * 5, y + 48, Object_System_Custom_Menu_Water ) ) {
+
+    Position_X = other.sprite_width / 10 * 5;
+    Position_Y = 48;
+
+}
+
 with( instance_create( sprite_width / 10 * 9, y + 48, Object_System_Custom_Menu_Save ) ) {
 
     Position_X = other.sprite_width / 10 * 9;

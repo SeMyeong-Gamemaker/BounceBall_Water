@@ -91,6 +91,8 @@ if( ( Mouse_Grid_X &gt;= 0 &amp;&amp; Mouse_Grid_X &lt; Width ) &amp;&amp; ( Mou
                 case 0 : sprite_index = Sprite_Wall_64; break;
                 case 1 : sprite_index = Sprite_Ball_64; break;
                 case 2 : sprite_index = Sprite_Pipe_64; break;
+                case 3 : sprite_index = Sprite_Fire_64_Center; break;
+                case 4 : sprite_index = Sprite_Water_64_Center; break;
         
             }   
             if( other.Block == 1 ) {

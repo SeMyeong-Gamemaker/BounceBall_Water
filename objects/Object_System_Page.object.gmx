@@ -40,6 +40,11 @@ if( global.World == 1 ) {
 
 }
 
+if( global.World == 2 ) {
+
+    if( global.Stage_Page[global.World] == 0 ) { sprite_index = Sprite_System_Custom_1 };
+
+}
 </string>
           </argument>
         </arguments>

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>Pollution_Amount = 100;
 Pollution_Amount_Max = 100;
-if( global.World == 0 ) { Pollution_Back = Sprite_Wall_64; }
+if( global.World == 0 || global.World == 2 ) { Pollution_Back = Sprite_Wall_64; }
 if( global.World == 1 ) { 
 
     switch( global.Stage_Page[global.World] ) {

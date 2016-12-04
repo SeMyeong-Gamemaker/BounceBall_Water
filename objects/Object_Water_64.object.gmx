@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>Water_Amount = 100;
 Water_Amount_Max = 100;
-if( global.World == 0 ) { Water_Back = Sprite_Wall_64; }
+if( global.World == 0 || global.World == 2 ) { Water_Back = Sprite_Wall_64; }
 if( global.World == 1 ) { 
 
     switch( global.Stage_Page[global.World] ) {

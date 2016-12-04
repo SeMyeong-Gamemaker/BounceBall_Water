@@ -90,6 +90,8 @@ for( i = 0; i &lt; Room_Width; i++ ) {
         
             case noone : break;    
             case 0 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Wall_64 ); break;
+            case 3 : instance_create( 32 + ( i * 64 ), 64 + ( j * 64 ), Object_Fire_64 ); break;
+            case 4 : instance_create( 32 + ( i * 64 ), 64 + ( j * 64 ), Object_Water_64 ); break;
         
         }
         
@@ -99,6 +101,8 @@ for( i = 0; i &lt; Room_Width; i++ ) {
 }
 
 ini_close();
+
+global.Stage_Fire[global.World,global.Stage_Last[2]] = instance_number( Object_Fire_64 );
 
 
 </string>
