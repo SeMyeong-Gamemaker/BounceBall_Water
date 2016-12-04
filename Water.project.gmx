@@ -299,6 +299,7 @@
         <object>objects\Object_System_Custom_Menu_Ball</object>
         <object>objects\Object_System_Custom_Menu_Pipe</object>
         <object>objects\Object_System_Custom_Menu_Save</object>
+        <object>objects\Object_System_Custom_Initialize</object>
       </objects>
     </objects>
     <objects name="Effect">
@@ -397,6 +398,13 @@
         <room>rooms\Room_1_32</room>
         <room>rooms\Room_1_33</room>
       </rooms>
+    </rooms>
+    <rooms name="Custom World">
+      <room>rooms\Room_Custom_1</room>
+      <room>rooms\Room_Custom_2</room>
+      <room>rooms\Room_Custom_3</room>
+      <room>rooms\Room_Custom_4</room>
+      <room>rooms\Room_Custom_5</room>
     </rooms>
   </rooms>
   <help>

@@ -118,28 +118,32 @@ y = Object_System_Custom_Menu.y + Position_Y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ini_open( "Custom_Stage.ini" );
-
-if( ini_section_exists( "Stage" + string( Number ) ) ) {
-
-    ini_section_delete( "Stage" + string( Number ) );
+            <string>if( show_question( "저장?" ) ) {
     
-}
-
-ini_write_real( "Stage" + string( Number ), "Room Size", Object_System_Custom_Setting.Size );
-ini_write_real( "Stage" + string( Number ), "Room Width", Object_System_Custom_Setting.Width );
-ini_write_real( "Stage" + string( Number ), "Room Height", Object_System_Custom_Setting.Height );
-for( i = 0; i &lt; Object_System_Custom_Setting.Width; i++ ) {
-
-    for( j = 0; j &lt; Object_System_Custom_Setting.Height; j++ ) {
+    ini_open( "Custom_Stage.ini" );
     
-        ini_write_real( "Stage" + string( Number ), "Block Placement [" + string( i ) + "," + string( j ) + "]", Object_System_Custom_Setting.Grid[i,j] );
+    if( ini_section_exists( "Stage" + string( Number ) ) ) {
+    
+        ini_section_delete( "Stage" + string( Number ) );
+        
+    }
+    
+    ini_write_string( "Stage" + string( Number ), "Room Size", room_get_name( room ) );
+    ini_write_real( "Stage" + string( Number ), "Room Width", Object_System_Custom_Setting.Width );
+    ini_write_real( "Stage" + string( Number ), "Room Height", Object_System_Custom_Setting.Height );
+    for( i = 0; i &lt; Object_System_Custom_Setting.Width; i++ ) {
+    
+        for( j = 0; j &lt; Object_System_Custom_Setting.Height; j++ ) {
+        
+            ini_write_real( "Stage" + string( Number ), "Block Placement [" + string( i ) + "," + string( j ) + "]", Object_System_Custom_Setting.Grid[i,j] );
+        
+        }
     
     }
+    
+    ini_close();
 
 }
-
-ini_close();
 </string>
           </argument>
         </arguments>

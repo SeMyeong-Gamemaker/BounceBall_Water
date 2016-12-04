@@ -108,11 +108,11 @@ global.Stage_Room[1,32] = Room_1_32;
 global.Stage_Room[1,33] = Room_1_33;
 
 global.Stage_Room[2,0] = 0;
-global.Stage_Room[2,1] = 0;
-global.Stage_Room[2,2] = 0;
-global.Stage_Room[2,3] = 0;
-global.Stage_Room[2,4] = 0;
-global.Stage_Room[2,5] = 0;
+global.Stage_Room[2,1] = Room_Custom_1;
+global.Stage_Room[2,2] = Room_Custom_2;
+global.Stage_Room[2,3] = Room_Custom_3;
+global.Stage_Room[2,4] = Room_Custom_4;
+global.Stage_Room[2,5] = Room_Custom_5;
 
 global.World = 0;
 

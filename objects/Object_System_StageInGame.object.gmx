@@ -28,7 +28,7 @@
             <string>Width = view_wview[0] / sprite_width;
 Height = 240 / sprite_height;
 
-if( global.World == 0 ) { Background = Sprite_Background_Tutorial; }
+if( global.World == 0 || global.World == 2 ) { Background = Sprite_Background_Tutorial; }
 if( global.World == 1 ) { 
 
     switch( global.Stage_Page[global.World] ) {
