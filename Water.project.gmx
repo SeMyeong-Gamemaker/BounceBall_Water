@@ -307,6 +307,7 @@
         <object>objects\Object_System_Custom_Menu_Pipe</object>
         <object>objects\Object_System_Custom_Menu_Fire</object>
         <object>objects\Object_System_Custom_Menu_Water</object>
+        <object>objects\Object_System_Custom_Menu_Special</object>
         <object>objects\Object_System_Custom_Menu_Save</object>
         <object>objects\Object_System_Custom_Initialize</object>
       </objects>

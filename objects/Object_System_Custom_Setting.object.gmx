@@ -100,6 +100,17 @@ if( ( Mouse_Grid_X &gt;= 0 &amp;&amp; Mouse_Grid_X &lt; Width ) &amp;&amp; ( Mou
                 case 6 : sprite_index = Sprite_Wall_Broken_64; break;
                 case 7 : sprite_index = Sprite_Wall_Bridge_64; break;
                 case 8 : sprite_index = Sprite_Wall_Broken_Bridge_64; break;
+                case 9 : sprite_index = Sprite_Wall_Grass_Top_64; break;
+                case 10 : sprite_index = Sprite_Wall_Grass_Mid_64; break;
+                case 11 : sprite_index = Sprite_Wall_Grass_Bot_64; break;
+                case 12 : sprite_index = Sprite_Filter_64; break;
+                case 13 : sprite_index = Sprite_Purifier_64; break;
+                case 14 : sprite_index = Sprite_Sponge_64; break;
+                case 15 : sprite_index = Sprite_Fan_64; break;
+                case 16 : sprite_index = Sprite_Fan_Wind_64; break;
+                case 17 : sprite_index = Sprite_Jumper_Leaf_64; break;
+                case 18 : sprite_index = Sprite_Drain_Up_64; break;
+                case 19 : sprite_index = Sprite_Drain_Down_64; break;
         
             }   
             if( other.Block == 1 ) {

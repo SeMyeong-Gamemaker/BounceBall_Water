@@ -108,6 +108,17 @@ for( i = 0; i &lt; Room_Width; i++ ) {
             case 6 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Wall_Broken_64 ); break;
             case 7 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Wall_Bridge_64 ); break;
             case 8 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Wall_Broken_Bridge_64 ); break;
+            case 9 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Wall_Grass_Top_64 ); break;
+            case 10 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Wall_Grass_Mid_64 ); break;
+            case 11 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Wall_Grass_Bot_64 ); break;
+            case 12 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Filter_64 ); break;
+            case 13 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Purifier_64 ); break;
+            case 14 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Sponge_64 ); break;
+            case 15 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Fan_64 ); break;
+            case 16 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Fan_Wind_64 ); break;
+            case 17 : instance_create( 32 + ( i * 64 ), 64 + ( j * 64 ), Object_Jumper_Leaf_64 ); break;
+            case 18 : instance_create( 32 + ( i * 64 ), 16 + ( j * 64 ), Object_Drain_Up_64 ); break;
+            case 19 : instance_create( 32 + ( i * 64 ), 48 + ( j * 64 ), Object_Drain_Down_64 ); break;
         
         }
         

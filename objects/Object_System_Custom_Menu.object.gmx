@@ -68,6 +68,14 @@ with( instance_create( sprite_width / 10 * 5, y + 48, Object_System_Custom_Menu_
 
 }
 
+with( instance_create( sprite_width / 10 * 6, y + 48, Object_System_Custom_Menu_Special ) ) {
+
+    image_alpha = 0;
+    Position_X = other.sprite_width / 10 * 6;
+    Position_Y = 48;
+
+}
+
 with( instance_create( sprite_width / 10 * 9, y + 48, Object_System_Custom_Menu_Save ) ) {
 
     image_alpha = 0;
@@ -130,6 +138,13 @@ with ( Object_System_Custom_Menu_Fire ) {
 }
 
 with ( Object_System_Custom_Menu_Water ) {
+
+    x = view_xview + Position_X;
+    y = other.y + Position_Y;
+
+}
+
+with ( Object_System_Custom_Menu_Special ) {
 
     x = view_xview + Position_X;
     y = other.y + Position_Y;
@@ -236,6 +251,13 @@ with ( Object_System_Custom_Menu_Water ) {
     if( Number == 1 ) { sprite_index = Sprite_Pollution_64_Center; }
     if( Number == 0 ) { sprite_index = Sprite_Water_64_Center; }
     
+    draw_set_alpha( 1 );
+    draw_sprite( sprite_index, -1, view_xview + Position_X, other.Y + Position_Y );
+
+}
+
+with ( Object_System_Custom_Menu_Special ) {
+
     draw_set_alpha( 1 );
     draw_sprite( sprite_index, -1, view_xview + Position_X, other.Y + Position_Y );
 
