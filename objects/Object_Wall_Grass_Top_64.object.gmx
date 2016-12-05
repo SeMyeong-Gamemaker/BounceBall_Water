@@ -36,6 +36,11 @@ if( global.World == 1 ) {
     }
 
 }
+if( global.World == 2 ) {
+ 
+    sprite_index = Sprite_Wall_Grass_Top_64;
+
+}
 alarm[0] = 1;
 </string>
           </argument>

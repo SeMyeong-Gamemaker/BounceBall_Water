@@ -138,7 +138,7 @@ if( global.Ball_Pollution &gt;= global.Ball_Water_Max ) { with( other ) { instan
           <argument>
             <kind>1</kind>
             <string>draw_sprite_ext( Pollution_Back, -1, x, y - 32, 1, 1, 0, c_silver, 1 );
-draw_sprite_ext( sprite_index, -1, x, y, 1, ( Pollution_Amount / Pollution_Amount_Max ), 0, c_white, 0.5 );
+draw_sprite_ext( sprite_index, -1, x, y, 1, ( Pollution_Amount / Pollution_Amount_Max ), 0, c_white, 1 );
 </string>
           </argument>
         </arguments>

@@ -129,6 +129,7 @@
         <sprite>sprites\Sprite_Icon_Tutorial</sprite>
         <sprite>sprites\Sprite_Icon_Unfinished</sprite>
         <sprite>sprites\Sprite_Icon_Custom</sprite>
+        <sprite>sprites\Sprite_Icon_Tutorial_World</sprite>
       </sprites>
       <sprites name="World">
         <sprite>sprites\Sprite_System_World_Tutorial</sprite>
