@@ -31,9 +31,14 @@ if( global.World == 1 ) {
     switch( global.Stage_Page[global.World] ) {
     
         case 0 : sprite_index = Sprite_Wall_Grass_Top_64; break;
-        case 1 : sprite_index = Sprite_Wall_Grass_Top_1_64; break;
+        case 1 : case 2 : sprite_index = Sprite_Wall_Grass_Top_1_64; break;
     
     }
+
+}
+if( global.World == 2 ) {
+ 
+    sprite_index = Sprite_Wall_Grass_Top_64;
 
 }
 alarm[0] = 1;

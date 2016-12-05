@@ -38,6 +38,16 @@ if( global.World == 0 ) {
     }
 
 }
+
+if( global.World == 1 ) {
+
+    switch( Object_System_StageSelect.i ) {
+
+            case 30 : Unfinished = true; break;
+         
+    }
+
+}
 </string>
           </argument>
         </arguments>

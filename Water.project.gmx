@@ -26,8 +26,10 @@
       <sprites name="Water">
         <sprite>sprites\Sprite_Water_64</sprite>
         <sprite>sprites\Sprite_Water_64_Mask</sprite>
+        <sprite>sprites\Sprite_Water_64_Center</sprite>
         <sprite>sprites\Sprite_Pollution_64</sprite>
         <sprite>sprites\Sprite_Pollution_64_Mask</sprite>
+        <sprite>sprites\Sprite_Pollution_64_Center</sprite>
       </sprites>
       <sprites name="Filter">
         <sprite>sprites\Sprite_Filter_64</sprite>
@@ -47,11 +49,14 @@
       <sprites name="Sponge">
         <sprite>sprites\Sprite_Sponge_64</sprite>
         <sprite>sprites\Sprite_Sponge_Wet_64</sprite>
+        <sprite>sprites\Sprite_Sponge_Sand_64</sprite>
+        <sprite>sprites\Sprite_Sponge_Sand_Wet_64</sprite>
         <sprite>sprites\Sprite_Sponge_64_Mask</sprite>
       </sprites>
       <sprites name="Fire">
         <sprite>sprites\Sprite_Fire_64</sprite>
         <sprite>sprites\Sprite_Fire_64_Ani</sprite>
+        <sprite>sprites\Sprite_Fire_64_Center</sprite>
       </sprites>
       <sprites name="Broken">
         <sprite>sprites\Sprite_Wall_Broken_64</sprite>
@@ -98,6 +103,9 @@
         <sprite>sprites\Sprite_Wall_Grass_Bot_64</sprite>
         <sprite>sprites\Sprite_Wall_Grass_Bot_1_64</sprite>
       </sprites>
+      <sprites name="Jumper">
+        <sprite>sprites\Sprite_Jumper_Leaf_64</sprite>
+      </sprites>
     </sprites>
     <sprites name="UI">
       <sprite>sprites\Sprite_UI_Bar</sprite>
@@ -120,9 +128,12 @@
         <sprite>sprites\Sprite_Icon_Fire_Perfect</sprite>
         <sprite>sprites\Sprite_Icon_Tutorial</sprite>
         <sprite>sprites\Sprite_Icon_Unfinished</sprite>
+        <sprite>sprites\Sprite_Icon_Custom</sprite>
+        <sprite>sprites\Sprite_Icon_Tutorial_World</sprite>
       </sprites>
       <sprites name="World">
         <sprite>sprites\Sprite_System_World_Tutorial</sprite>
+        <sprite>sprites\Sprite_System_World_Custom</sprite>
         <sprites name="Tutorial">
           <sprite>sprites\Sprite_System_Page_1</sprite>
           <sprite>sprites\Sprite_System_Page_2</sprite>
@@ -131,14 +142,23 @@
         <sprites name="World 1">
           <sprite>sprites\Sprite_System_World1_1</sprite>
           <sprite>sprites\Sprite_System_World1_2</sprite>
+          <sprite>sprites\Sprite_System_World1_3</sprite>
         </sprites>
+        <sprites name="Custom">
+          <sprite>sprites\Sprite_System_Custom_1</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Custom">
+        <sprite>sprites\Sprite_System_Custom_Menu</sprite>
+        <sprite>sprites\Sprite_System_Custom_Menu_Save</sprite>
       </sprites>
     </sprites>
     <sprites name="Background">
       <sprite>sprites\Sprite_Background_Web</sprite>
+      <sprite>sprites\Sprite_Background_Tutorial</sprite>
       <sprite>sprites\Sprite_Background_1</sprite>
       <sprite>sprites\Sprite_Background_2</sprite>
-      <sprite>sprites\Sprite_Background_Tutorial</sprite>
+      <sprite>sprites\Sprite_Background_3</sprite>
       <sprite>sprites\Sprite_Background_Title</sprite>
     </sprites>
     <sprites name="Effect">
@@ -161,6 +181,7 @@
   <backgrounds name="background">
     <background>background\Background_Web</background>
     <background>background\background1</background>
+    <background>background\background2</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -210,6 +231,7 @@
       <objects name="Sponge">
         <object>objects\Object_Sponge_Parent</object>
         <object>objects\Object_Sponge_64</object>
+        <object>objects\Object_Sponge_Sand_64</object>
         <object>objects\Object_Sponge_Inside_Parent</object>
         <object>objects\Object_Sponge_Inside_64</object>
       </objects>
@@ -235,7 +257,17 @@
         <object>objects\Object_Fan_64</object>
         <object>objects\Object_Fan_Wind_64</object>
       </objects>
-      <object>objects\Object_Pipe_64</object>
+      <objects name="Jumper">
+        <object>objects\Object_Jumper_Parent</object>
+        <object>objects\Object_Jumper_Leaf_64</object>
+      </objects>
+      <objects name="Pipe">
+        <object>objects\Object_Pipe_64</object>
+        <object>objects\Object_PipeIn_Parent</object>
+        <object>objects\Object_PipeIn_64</object>
+        <object>objects\Object_PipeOut_Parent</object>
+        <object>objects\Object_PipeOut_64</object>
+      </objects>
     </objects>
     <objects name="System">
       <object>objects\Object_System_Page</object>
@@ -243,6 +275,9 @@
       <object>objects\Object_System_Back</object>
       <object>objects\Object_System_Select</object>
       <object>objects\Object_System_Next</object>
+      <object>objects\Object_System_Make_Small</object>
+      <object>objects\Object_System_Make_Medium</object>
+      <object>objects\Object_System_Make_Large</object>
       <objects name="Stage">
         <object>objects\Object_System_Stage</object>
         <object>objects\Object_System_Subtitle</object>
@@ -261,13 +296,26 @@
       <objects name="World">
         <object>objects\Object_System_World_Tutorial</object>
         <object>objects\Object_System_World_1</object>
+        <object>objects\Object_System_World_Custom</object>
+      </objects>
+      <objects name="Custom">
+        <object>objects\Object_System_Custom_Setting</object>
+        <object>objects\Object_System_Custom_Block</object>
+        <object>objects\Object_System_Custom_Menu</object>
+        <object>objects\Object_System_Custom_Menu_Block</object>
+        <object>objects\Object_System_Custom_Menu_Ball</object>
+        <object>objects\Object_System_Custom_Menu_Pipe</object>
+        <object>objects\Object_System_Custom_Menu_Fire</object>
+        <object>objects\Object_System_Custom_Menu_Water</object>
+        <object>objects\Object_System_Custom_Menu_Special</object>
+        <object>objects\Object_System_Custom_Menu_Save</object>
+        <object>objects\Object_System_Custom_Initialize</object>
       </objects>
     </objects>
     <objects name="Effect">
       <object>objects\Object_Effect_Drop</object>
       <object>objects\Object_Effect_Debri</object>
     </objects>
-    <object>objects\object62</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
@@ -349,9 +397,29 @@
         <room>rooms\Room_1_25</room>
         <room>rooms\Room_1_26</room>
         <room>rooms\Room_1_27</room>
+        <room>rooms\Room_1_28</room>
+        <room>rooms\Room_1_29</room>
+        <room>rooms\Room_1_30</room>
+        <room>rooms\Room_1_25_1</room>
+      </rooms>
+      <rooms name="Page 3">
+        <room>rooms\Room_1_31</room>
+        <room>rooms\Room_1_32</room>
+        <room>rooms\Room_1_33</room>
       </rooms>
     </rooms>
-    <room>rooms\Room_1_25_1</room>
+    <rooms name="Custom World">
+      <room>rooms\Room_Custom_1</room>
+      <room>rooms\Room_Custom_2</room>
+      <room>rooms\Room_Custom_3</room>
+      <room>rooms\Room_Custom_4</room>
+      <room>rooms\Room_Custom_5</room>
+    </rooms>
+    <rooms name="Custom">
+      <room>rooms\Room_Custom_Small</room>
+      <room>rooms\Room_Custom_Medium</room>
+      <room>rooms\Room_Custom_Large</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

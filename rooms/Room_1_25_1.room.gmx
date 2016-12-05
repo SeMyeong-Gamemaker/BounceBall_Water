@@ -10,10 +10,10 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.Stage_Name = "1-25"
+  <code>global.Stage_Name = "1-29"
 global.Stage_World = 1;
-global.Stage_Number = 25;
-global.Stage_Last[global.Stage_World] = 25;
+global.Stage_Number = 29;
+global.Stage_Last[global.Stage_World] = 29;
 global.Stage_Fire[global.Stage_World,global.Stage_Number] = instance_number( Object_Fire_64 );
 randomize();</code>
   <enableViews>-1</enableViews>

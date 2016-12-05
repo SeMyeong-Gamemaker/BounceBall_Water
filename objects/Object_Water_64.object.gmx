@@ -27,13 +27,13 @@
             <kind>1</kind>
             <string>Water_Amount = 100;
 Water_Amount_Max = 100;
-if( global.World == 0 ) { Water_Back = Sprite_Wall_64; }
+if( global.World == 0 || global.World == 2 ) { Water_Back = Sprite_Wall_64; }
 if( global.World == 1 ) { 
 
     switch( global.Stage_Page[global.World] ) {
     
         case 0 : Water_Back = Sprite_Wall_Grass_Top_64; break;
-        case 1 : Water_Back = Sprite_Wall_Grass_Top_1_64; break;
+        case 1 : case 2 : Water_Back = Sprite_Wall_Grass_Top_1_64; break;
 
     }
     

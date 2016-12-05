@@ -27,13 +27,13 @@
             <kind>1</kind>
             <string>Pollution_Amount = 100;
 Pollution_Amount_Max = 100;
-if( global.World == 0 ) { Pollution_Back = Sprite_Wall_64; }
+if( global.World == 0 || global.World == 2 ) { Pollution_Back = Sprite_Wall_64; }
 if( global.World == 1 ) { 
 
     switch( global.Stage_Page[global.World] ) {
     
         case 0 : Pollution_Back = Sprite_Wall_Grass_Top_64; break;
-        case 1 : Pollution_Back = Sprite_Wall_Grass_Top_1_64; break;
+        case 1 : case 2 : Pollution_Back = Sprite_Wall_Grass_Top_1_64; break;
 
     }
     
@@ -138,7 +138,7 @@ if( global.Ball_Pollution &gt;= global.Ball_Water_Max ) { with( other ) { instan
           <argument>
             <kind>1</kind>
             <string>draw_sprite_ext( Pollution_Back, -1, x, y - 32, 1, 1, 0, c_silver, 1 );
-draw_sprite_ext( sprite_index, -1, x, y, 1, ( Pollution_Amount / Pollution_Amount_Max ), 0, c_white, 0.5 );
+draw_sprite_ext( sprite_index, -1, x, y, 1, ( Pollution_Amount / Pollution_Amount_Max ), 0, c_white, 1 );
 </string>
           </argument>
         </arguments>

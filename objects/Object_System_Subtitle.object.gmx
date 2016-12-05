@@ -53,7 +53,7 @@ Height = 240 / sprite_height;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( image_alpha &gt; 0 ) { image_alpha -= 1 / ( room_speed * 10 ); }
+            <string>if( image_alpha &gt; 0 ) { image_alpha -= 1 / ( room_speed * 2 ); }
 </string>
           </argument>
         </arguments>

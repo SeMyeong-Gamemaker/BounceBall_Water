@@ -100,6 +100,19 @@ global.Stage_Room[1,24] = Room_1_24;
 global.Stage_Room[1,25] = Room_1_25;
 global.Stage_Room[1,26] = Room_1_26;
 global.Stage_Room[1,27] = Room_1_27;
+global.Stage_Room[1,28] = Room_1_28;
+global.Stage_Room[1,29] = Room_1_29;
+global.Stage_Room[1,30] = Room_1_30;
+global.Stage_Room[1,31] = Room_1_31;
+global.Stage_Room[1,32] = Room_1_32;
+global.Stage_Room[1,33] = Room_1_33;
+
+global.Stage_Room[2,0] = 0;
+global.Stage_Room[2,1] = Room_Custom_1;
+global.Stage_Room[2,2] = Room_Custom_2;
+global.Stage_Room[2,3] = Room_Custom_3;
+global.Stage_Room[2,4] = Room_Custom_4;
+global.Stage_Room[2,5] = Room_Custom_5;
 
 global.World = 0;
 
