@@ -25,7 +25,181 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Block = 0;
+            <string>Check = false;
+Number = 0;
+Block = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="61">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if( Check ) {
+
+    if( Number &gt; 0 ) { Number--; }
+    
+switch( Number ) {
+    
+        case 0 :
+        
+            Block = 0;
+            sprite_index = Sprite_Wall_64;
+            Object_System_Custom_Setting.Select = 0;
+            Object_System_Custom_Setting.Block = Block;
+            break;
+            
+        case 1 :
+        
+            Block = 6;
+            sprite_index = Sprite_Wall_Broken_64;
+            Object_System_Custom_Setting.Select = 0;
+            Object_System_Custom_Setting.Block = Block;
+            break;
+            
+        case 2 :
+        
+            Block = 7;
+            sprite_index = Sprite_Wall_Bridge_64;
+            Object_System_Custom_Setting.Select = 0;
+            Object_System_Custom_Setting.Block = Block;
+            break;
+            
+        case 3 :
+        
+            Block = 8;
+            sprite_index = Sprite_Wall_Broken_Bridge_64;
+            Object_System_Custom_Setting.Select = 0;
+            Object_System_Custom_Setting.Block = Block;
+            break;
+    
+    }
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="60">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if( Check ) {
+
+    if( Number &lt; 3 ) { Number++; }
+    
+    switch( Number ) {
+    
+        case 0 :
+        
+            Block = 0;
+            sprite_index = Sprite_Wall_64;
+            Object_System_Custom_Setting.Select = 0;
+            Object_System_Custom_Setting.Block = Block;
+            break;
+            
+        case 1 :
+        
+            Block = 6;
+            sprite_index = Sprite_Wall_Broken_64;
+            Object_System_Custom_Setting.Select = 0;
+            Object_System_Custom_Setting.Block = Block;
+            break;
+            
+        case 2 :
+        
+            Block = 7;
+            sprite_index = Sprite_Wall_Bridge_64;
+            Object_System_Custom_Setting.Select = 0;
+            Object_System_Custom_Setting.Block = Block;
+            break;
+            
+        case 3 :
+        
+            Block = 8;
+            sprite_index = Sprite_Wall_Broken_Bridge_64;
+            Object_System_Custom_Setting.Select = 0;
+            Object_System_Custom_Setting.Block = Block;
+            break;
+    
+    }
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Check = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Check = true;
 </string>
           </argument>
         </arguments>

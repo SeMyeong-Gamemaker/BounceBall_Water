@@ -97,6 +97,9 @@ if( ( Mouse_Grid_X &gt;= 0 &amp;&amp; Mouse_Grid_X &lt; Width ) &amp;&amp; ( Mou
                 case 3 : sprite_index = Sprite_Fire_64_Center; break;
                 case 4 : sprite_index = Sprite_Water_64_Center; break;
                 case 5 : sprite_index = Sprite_Pollution_64_Center; break;
+                case 6 : sprite_index = Sprite_Wall_Broken_64; break;
+                case 7 : sprite_index = Sprite_Wall_Bridge_64; break;
+                case 8 : sprite_index = Sprite_Wall_Broken_Bridge_64; break;
         
             }   
             if( other.Block == 1 ) {

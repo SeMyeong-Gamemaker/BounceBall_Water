@@ -105,6 +105,9 @@ for( i = 0; i &lt; Room_Width; i++ ) {
             case 3 : instance_create( 32 + ( i * 64 ), 64 + ( j * 64 ), Object_Fire_64 ); break;
             case 4 : instance_create( 32 + ( i * 64 ), 64 + ( j * 64 ), Object_Water_64 ); break;
             case 5 : instance_create( 32 + ( i * 64 ), 64 + ( j * 64 ), Object_Pollution_64 ); break;
+            case 6 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Wall_Broken_64 ); break;
+            case 7 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Wall_Bridge_64 ); break;
+            case 8 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Wall_Broken_Bridge_64 ); break;
         
         }
         
