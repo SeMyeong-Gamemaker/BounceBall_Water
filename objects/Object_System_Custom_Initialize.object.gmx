@@ -33,7 +33,7 @@ if( !ini_section_exists( "Stage" + string( global.Stage_Last[2] ) ) ) {
     
 }
 
-Room_Size = ini_read_real( "Stage" + string( global.Stage_Last[2] ), "Room Size", noone );
+Room_Size = ini_read_string( "Stage" + string( global.Stage_Last[2] ), "Room Size", noone );
 switch( Room_Size ) {
 
     case "Room_Custom_Small" :
@@ -104,6 +104,7 @@ for( i = 0; i &lt; Room_Width; i++ ) {
             case 0 : instance_create( 32 + ( i * 64 ), 32 + ( j * 64 ), Object_Wall_64 ); break;
             case 3 : instance_create( 32 + ( i * 64 ), 64 + ( j * 64 ), Object_Fire_64 ); break;
             case 4 : instance_create( 32 + ( i * 64 ), 64 + ( j * 64 ), Object_Water_64 ); break;
+            case 5 : instance_create( 32 + ( i * 64 ), 64 + ( j * 64 ), Object_Pollution_64 ); break;
         
         }
         

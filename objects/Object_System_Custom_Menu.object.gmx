@@ -26,10 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>Open = false;
-
+Y = 0;
 
 with( instance_create( sprite_width / 10, y + 48, Object_System_Custom_Menu_Block ) ) {
 
+    image_alpha = 0;
     Position_X = other.sprite_width / 10;
     Position_Y = 48;
 
@@ -37,6 +38,7 @@ with( instance_create( sprite_width / 10, y + 48, Object_System_Custom_Menu_Bloc
 
 with( instance_create( sprite_width / 10 * 2, y + 48, Object_System_Custom_Menu_Ball ) ) {
 
+    image_alpha = 0;
     Position_X = other.sprite_width / 10 * 2;
     Position_Y = 48;
 
@@ -44,6 +46,7 @@ with( instance_create( sprite_width / 10 * 2, y + 48, Object_System_Custom_Menu_
 
 with( instance_create( sprite_width / 10 * 3, y + 48, Object_System_Custom_Menu_Pipe ) ) {
 
+    image_alpha = 0;
     Position_X = other.sprite_width / 10 * 3;
     Position_Y = 48;
 
@@ -51,6 +54,7 @@ with( instance_create( sprite_width / 10 * 3, y + 48, Object_System_Custom_Menu_
 
 with( instance_create( sprite_width / 10 * 4, y + 48, Object_System_Custom_Menu_Fire ) ) {
 
+    image_alpha = 0;
     Position_X = other.sprite_width / 10 * 4;
     Position_Y = 48;
 
@@ -58,6 +62,7 @@ with( instance_create( sprite_width / 10 * 4, y + 48, Object_System_Custom_Menu_
 
 with( instance_create( sprite_width / 10 * 5, y + 48, Object_System_Custom_Menu_Water ) ) {
 
+    image_alpha = 0;
     Position_X = other.sprite_width / 10 * 5;
     Position_Y = 48;
 
@@ -65,6 +70,7 @@ with( instance_create( sprite_width / 10 * 5, y + 48, Object_System_Custom_Menu_
 
 with( instance_create( sprite_width / 10 * 9, y + 48, Object_System_Custom_Menu_Save ) ) {
 
+    image_alpha = 0;
     Position_X = other.sprite_width / 10 * 9;
     Position_Y = 48;
 
@@ -95,23 +101,48 @@ with( instance_create( sprite_width / 10 * 9, y + 48, Object_System_Custom_Menu_
 if( Open == false ) { y = view_yview + view_hview - 8; }
 else{ y = view_yview + view_hview - sprite_height + 8; }
 
-Object_System_Custom_Menu_Block.x = view_xview + Object_System_Custom_Menu_Block.Position_X;
-Object_System_Custom_Menu_Block.y = y + Object_System_Custom_Menu_Block.Position_Y;
+with ( Object_System_Custom_Menu_Block ) {
 
-Object_System_Custom_Menu_Ball.x = view_xview + Object_System_Custom_Menu_Ball.Position_X;
-Object_System_Custom_Menu_Ball.y = y + Object_System_Custom_Menu_Ball.Position_Y;
+    x = view_xview + Position_X;
+    y = other.y + Position_Y;
 
-Object_System_Custom_Menu_Pipe.x = view_xview + Object_System_Custom_Menu_Pipe.Position_X;
-Object_System_Custom_Menu_Pipe.y = y + Object_System_Custom_Menu_Pipe.Position_Y;
+}
 
-Object_System_Custom_Menu_Fire.x = view_xview + Object_System_Custom_Menu_Fire.Position_X;
-Object_System_Custom_Menu_Fire.y = y + Object_System_Custom_Menu_Fire.Position_Y;
+with ( Object_System_Custom_Menu_Ball ) {
 
-Object_System_Custom_Menu_Water.x = view_xview + Object_System_Custom_Menu_Water.Position_X;
-Object_System_Custom_Menu_Water.y = y + Object_System_Custom_Menu_Water.Position_Y;
+    x = view_xview + Position_X;
+    y = other.y + Position_Y;
 
-Object_System_Custom_Menu_Save.x = view_xview + Object_System_Custom_Menu_Save.Position_X;
-Object_System_Custom_Menu_Save.y = y + Object_System_Custom_Menu_Save.Position_Y;
+}
+
+with ( Object_System_Custom_Menu_Pipe ) {
+
+    x = view_xview + Position_X;
+    y = other.y + Position_Y;
+
+}
+
+with ( Object_System_Custom_Menu_Fire ) {
+
+    x = view_xview + Position_X;
+    y = other.y + Position_Y;
+
+}
+
+with ( Object_System_Custom_Menu_Water ) {
+
+    x = view_xview + Position_X;
+    y = other.y + Position_Y;
+
+}
+
+with ( Object_System_Custom_Menu_Save ) {
+
+    x = view_xview + Position_X;
+    y = other.y + Position_Y;
+
+}
+
 </string>
           </argument>
         </arguments>
@@ -159,8 +190,68 @@ Object_System_Custom_Menu_Save.y = y + Object_System_Custom_Menu_Save.Position_Y
           <argument>
             <kind>1</kind>
             <string>draw_set_alpha( 1 );
-if( Open == false )  { draw_sprite( sprite_index, -1, view_xview + ( view_wview / 2 ), view_yview + view_hview - 8 ); }
-else { draw_sprite( sprite_index, -1, view_xview + ( view_wview / 2 ), view_yview + view_hview - sprite_height + 8 ); }
+
+if( Open == false )  {
+
+    draw_sprite( sprite_index, -1, view_xview + ( view_wview / 2 ), view_yview + view_hview - 8 );
+    Y = view_yview + view_hview - 8;
+    
+} else {
+
+    draw_sprite( sprite_index, -1, view_xview + ( view_wview / 2 ), view_yview + view_hview - sprite_height + 8 );
+    Y = view_yview + view_hview - sprite_height + 8;
+
+}
+
+with ( Object_System_Custom_Menu_Block ) {
+
+    draw_set_alpha( 1 );
+    draw_sprite( sprite_index, -1, view_xview + Position_X, other.Y + Position_Y );
+
+}
+
+with ( Object_System_Custom_Menu_Ball ) {
+
+    draw_set_alpha( 1 );
+    draw_sprite( sprite_index, -1, view_xview + Position_X, other.Y + Position_Y );
+
+}
+
+with ( Object_System_Custom_Menu_Pipe ) {
+
+    draw_set_alpha( 1 );
+    draw_sprite( sprite_index, -1, view_xview + Position_X, other.Y + Position_Y );
+
+}
+
+with ( Object_System_Custom_Menu_Fire ) {
+
+    draw_set_alpha( 1 );
+    draw_sprite( sprite_index, -1, view_xview + Position_X, other.Y + Position_Y );
+
+}
+
+with ( Object_System_Custom_Menu_Water ) {
+
+    if( Number == 1 ) { sprite_index = Sprite_Pollution_64_Center; }
+    if( Number == 0 ) { sprite_index = Sprite_Water_64_Center; }
+    
+    draw_set_alpha( 1 );
+    draw_sprite( sprite_index, -1, view_xview + Position_X, other.Y + Position_Y );
+
+}
+
+with ( Object_System_Custom_Menu_Save ) {
+
+    draw_set_font( Font_24 );
+    draw_set_halign( fa_center );
+    draw_set_valign( fa_middle );
+    draw_set_alpha( 1 );
+    draw_sprite( sprite_index, -1, view_xview + Position_X, other.Y + Position_Y );
+    draw_set_alpha( 0.5 );
+    draw_text( x, y + 16, string( Number ) );
+    
+}
 </string>
           </argument>
         </arguments>

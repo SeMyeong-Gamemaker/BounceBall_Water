@@ -29,6 +29,7 @@
         <sprite>sprites\Sprite_Water_64_Center</sprite>
         <sprite>sprites\Sprite_Pollution_64</sprite>
         <sprite>sprites\Sprite_Pollution_64_Mask</sprite>
+        <sprite>sprites\Sprite_Pollution_64_Center</sprite>
       </sprites>
       <sprites name="Filter">
         <sprite>sprites\Sprite_Filter_64</sprite>
