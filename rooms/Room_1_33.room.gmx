@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1280</width>
   <height>720</height>
-  <vsnap>64</vsnap>
-  <hsnap>64</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -157,14 +157,15 @@ randomize();</code>
     <instance objName="Object_Drain_Down_64" x="384" y="272" name="inst_CFA8168D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Drain_Down_64" x="448" y="272" name="inst_C2C6B715" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Drain_Down_64" x="512" y="272" name="inst_C63EA090" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Drain_Down_64" x="576" y="272" name="inst_16E9AD0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Drain_Down_64" x="768" y="272" name="inst_5808222E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Drain_Down_64" x="704" y="272" name="inst_1A80E328" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Drain_Down_64" x="256" y="272" name="inst_4A6B30B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Drain_Down_64" x="320" y="272" name="inst_056ED2E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Jumper_Leaf_64" x="192" y="224" name="inst_3F462833" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Object_Jumper_Leaf_64" x="640" y="224" name="inst_AB311AEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Jumper_Leaf_64" x="576" y="224" name="inst_AB311AEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Object_Jumper_Leaf_64" x="1088" y="224" name="inst_0231D193" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Jumper_Leaf_64" x="704" y="224" name="inst_2E2E4426" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Grass_Top_64" x="576" y="256" name="inst_CED4097F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Object_Wall_Grass_Top_64" x="704" y="256" name="inst_17E3FB7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
