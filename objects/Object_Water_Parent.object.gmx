@@ -132,7 +132,7 @@ if( global.World == 1 ) {
           <argument>
             <kind>1</kind>
             <string>draw_sprite_ext( Water_Back, -1, x, y - 32, 1, 1, 0, c_silver, 1 );
-draw_sprite_ext( sprite_index, -1, x, y, 1, ( Water_Amount / Water_Amount_Max ), 0, c_white, 1 );
+draw_sprite_ext( sprite_index, -1, x, y + ( 1 - ( Water_Amount / Water_Amount_Max ) ) * 64, 1, 1, 0, c_white, 1 );
 </string>
           </argument>
         </arguments>
