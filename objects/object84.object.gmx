@@ -3,7 +3,7 @@
   <spriteName>Sprite_UI_Bar</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-100000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,24 +25,40 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Width = view_wview[0] / sprite_width;
-Height = 240 / sprite_height;
-
-if( global.World == 0 || global.World == 2 ) { Background = Sprite_Background_Tutorial; }
-if( global.World == 1 ) { 
-
-    switch( global.Stage_Page[global.World] ) {
+            <string>/// FPS
     
-        case 0 : Background = Sprite_Background_1; break;
-        case 1 : Background = Sprite_Background_2; break;
-        case 2 : Background = Sprite_Background_3; break;
+    fpss = 10000;
+    fpssss = -1;
+    fpss25 = 0;
+    fpss20 = 0;
+    fpss15 = 0;
+    fpsss = 0;
+    fpson = false;
+    alarm[0] = 120
 
-    }
-    
-}
-
-instance_create( x, y, Object_System_Subtitle );
-
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>fpson = false;
 </string>
           </argument>
         </arguments>
@@ -65,7 +81,18 @@ instance_create( x, y, Object_System_Subtitle );
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_restart();
+            <string>    fpson = true;
+    if( fpson ) {
+    
+        fpss = fps_real;
+        fpssss = fps_real;
+        if( fps_real &gt;= 2500 ) { fpss25++; }
+        if( fps_real &gt;= 2000 &amp;&amp; fps_real &lt; 2500 ) { fpss20++; }
+        if( fps_real &gt;= 1500 &amp;&amp; fps_real &lt; 2000 ) { fpss15++; }
+        if( fps_real &lt; 1500 ) { fpsss++; }
+    
+    }
+    alarm[1] = room_speed * 30;
 </string>
           </argument>
         </arguments>
@@ -88,8 +115,18 @@ instance_create( x, y, Object_System_Subtitle );
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( image_alpha &gt; 0 ) { image_alpha -= 1 / ( room_speed * 10 ); }
-
+            <string>/// FPS
+    
+    if( fpson ) {
+    
+        if( fps_real &gt; fpss ) { fpss = fps_real; }
+        if( fps_real &lt; fpssss ) { fpssss = fps_real; }
+        if( fps_real &gt;= 2500 ) { fpss25++; }
+        if( fps_real &gt;= 2000 &amp;&amp; fps_real &lt; 2500 ) { fpss20++; }
+        if( fps_real &gt;= 1500 &amp;&amp; fps_real &lt; 2000 ) { fpss15++; }
+        if( fps_real &lt; 1500 ) { fpsss++; }
+    
+    }
 </string>
           </argument>
         </arguments>
@@ -112,35 +149,17 @@ instance_create( x, y, Object_System_Subtitle );
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font( Font_24 );
-draw_set_halign( fa_center );
-draw_set_valign( fa_middle );
-draw_set_alpha( 1 );
-draw_sprite_ext( Background, -1, view_xview[0] + ( view_wview[0] / 2 ), view_yview[0] + ( view_hview[0] / 2 ), view_wview[0] / sprite_get_width( Background ), view_hview[0] / sprite_get_height( Background ), -view_angle[0], c_white, 1 ); 
+            <string>/// FPS Test
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="10" enumb="27">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>room_goto( Room_Stage );
+    // FOR FPS TEST ONLY
+    
+    draw_set_colour( c_black );
+    draw_text( 128, 64, "MAXFPS : " + string( fpss ) );
+    draw_text( 128, 128, "MINFPS : " + string( fpssss ) );
+    draw_text( 128, 256, "&gt;=2500 : " + string( fpss25 ) );
+    draw_text( 128, 320, "2000 2499 : " + string( fpss20 ) );
+    draw_text( 128, 384, "1500 1999 : " + string( fpss15 ) );
+    draw_text( 128, 448, "&lt; 1500 : " + string( fpsss ) );
 </string>
           </argument>
         </arguments>

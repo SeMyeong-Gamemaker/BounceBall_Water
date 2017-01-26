@@ -282,6 +282,7 @@
         <object>objects\Object_System_Stage</object>
         <object>objects\Object_System_Subtitle</object>
         <object>objects\Object_System_StageInGame</object>
+        <object>objects\object84</object>
         <object>objects\Object_System_StageButton</object>
         <object>objects\Object_System_StageSelect</object>
         <object>objects\Object_System_Stage_Prev</object>
